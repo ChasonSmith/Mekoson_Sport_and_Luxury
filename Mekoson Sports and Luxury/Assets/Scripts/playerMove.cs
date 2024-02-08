@@ -5,7 +5,8 @@ using UnityEngine;
 public class playerMove : MonoBehaviour
 {
     Rigidbody rb;
-    public float rotationSpeed = 30f;
+    // The object to rotate around
+    public float rotationSpeed = 45f;
     public float moveSpeed = 5f;
     float rotationAmount;
     Transform childTransform;
@@ -22,48 +23,47 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 forwardDirection = transform.forward;
 
         // Move the object forward based on its forward direction
         
-        if (Input.GetKeyDown("space")){
-            rb.velocity = new Vector3(rb.velocity.x,5,rb.velocity.z);
-        }
-        if (Input.GetKey("up") || Input.GetKey(KeyCode.W)){
-            //rb.velocity = new Vector3(rb.velocity.x,rb.velocity.y,5);
+        // if (Input.GetKeyDown("space")){
+        //     rb.velocity = new Vector3(rb.velocity.x,5,rb.velocity.z);
+        // }
+        if (Input.GetKey(KeyCode.W)){
+            Vector3 forwardDirection = transform.forward;
             transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
+
             if (childTransform != null)
             {
-                childTransform.rotation = Quaternion.LookRotation(Vector3.forward);
+                childTransform.rotation = Quaternion.LookRotation(forwardDirection);
             }
         }
         if (Input.GetKey(KeyCode.D)){
-            //rb.velocity = new Vector3(5,0,rb.velocity.z);
-            transform.Translate(transform.right * moveSpeed * Time.deltaTime, Space.World);
+            Vector3 rightDirection = transform.right;
+            transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
+
             if (childTransform != null)
             {
-                childTransform.rotation = Quaternion.LookRotation(Vector3.right);
+                childTransform.rotation = Quaternion.LookRotation(rightDirection);
             }
-            //rotationAmount = rotationSpeed * Time.deltaTime;
-            //transform.Rotate(Vector3.up, rotationAmount);
         }
-        if (Input.GetKey("down") || Input.GetKey(KeyCode.S)){
-            //rb.velocity = new Vector3(rb.velocity.x,rb.velocity.y,-5);
-            transform.Translate(forwardDirection * -moveSpeed * Time.deltaTime, Space.World);
+        if (Input.GetKey(KeyCode.S)){
+            Vector3 backwardDirection = -transform.forward; // Get the backward direction relative to the character's current orientation
+            transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
+
             if (childTransform != null)
             {
-                childTransform.rotation = Quaternion.LookRotation(-Vector3.forward);
+                childTransform.rotation = Quaternion.LookRotation(backwardDirection);
             }
         }
         if (Input.GetKey(KeyCode.A)){
-            //rb.velocity = new Vector3(-5,rb.velocity.y,rb.velocity.z);
-            transform.Translate(-transform.right * moveSpeed * Time.deltaTime, Space.World);
+            Vector3 leftDirection = -transform.right;
+            transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
+
             if (childTransform != null)
             {
-                childTransform.rotation = Quaternion.LookRotation(-Vector3.right);
+                childTransform.rotation = Quaternion.LookRotation(leftDirection);
             }
-            //rotationAmount = rotationSpeed * Time.deltaTime;
-            //transform.Rotate(Vector3.up, -rotationAmount);
         }
         if (Input.GetKey("left")){
             //rb.velocity = new Vector3(-5,rb.velocity.y,rb.velocity.z);
