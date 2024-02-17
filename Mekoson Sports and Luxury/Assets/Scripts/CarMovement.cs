@@ -11,6 +11,7 @@ public class CarMovement : MonoBehaviour
     float rotationAmount;
     Transform cameraTransform;
     Transform childTransform;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -45,49 +46,6 @@ public class CarMovement : MonoBehaviour
             cameraTransform.gameObject.SetActive(true);
             //carTransform = transform.GetChild(3);
         }
-
-        
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)){
-            Vector3 forwardDirection = transform.forward;
-            transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
-            Vector3 rightDirection = transform.right;
-            transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
-
-            Quaternion targetRotation = Quaternion.Lerp(Quaternion.LookRotation(forwardDirection), Quaternion.LookRotation(rightDirection), 0.5f); // This will make it look halfway between forward and left, adjust as needed
-            // Apply the interpolated rotation to the child transform
-            childTransform.rotation = targetRotation;
-        }
-        else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)){
-            Vector3 forwardDirection = transform.forward;
-            transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
-            Vector3 leftDirection = -transform.right;
-            transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
-
-            Quaternion targetRotation = Quaternion.Lerp(Quaternion.LookRotation(forwardDirection), Quaternion.LookRotation(leftDirection), 0.5f); // This will make it look halfway between forward and left, adjust as needed
-            // Apply the interpolated rotation to the child transform
-            childTransform.rotation = targetRotation;
-        }
-        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)){
-            Vector3 backwardDirection = -transform.forward;
-            transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
-            Vector3 leftDirection = -transform.right;
-            transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
-
-            Quaternion targetRotation = Quaternion.Lerp(Quaternion.LookRotation(backwardDirection), Quaternion.LookRotation(leftDirection), 0.5f); // This will make it look halfway between forward and left, adjust as needed
-            // Apply the interpolated rotation to the child transform
-            childTransform.rotation = targetRotation;
-        }
-        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)){
-            Vector3 backwardDirection = -transform.forward;
-            transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
-            Vector3 rightDirection = transform.right;
-            transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
-
-            Quaternion targetRotation = Quaternion.Lerp(Quaternion.LookRotation(backwardDirection), Quaternion.LookRotation(rightDirection), 0.5f); // This will make it look halfway between forward and left, adjust as needed
-            // Apply the interpolated rotation to the child transform
-            childTransform.rotation = targetRotation;
-        }
-        else{
             if (Input.GetKey(KeyCode.W)){
                 Vector3 forwardDirection = transform.forward;
                 transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
@@ -97,45 +55,88 @@ public class CarMovement : MonoBehaviour
                     childTransform.rotation = Quaternion.LookRotation(forwardDirection);
                 }
             }
-            if (Input.GetKey(KeyCode.D)){
-                Vector3 rightDirection = transform.right;
-                transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
-
-                if (childTransform != null)
-                {
-                    childTransform.rotation = Quaternion.LookRotation(rightDirection);
-                }
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)){
+                // Vector3 rightDirection = transform.right;
+                // transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
+                rotationAmount = rotationSpeed * Time.deltaTime;
+                childTransform.Rotate(Vector3.up, -rotationAmount);
+                transform.Rotate(Vector3.up, rotationAmount);
+                // if (childTransform != null)
+                // {
+                //     childTransform.rotation = Quaternion.LookRotation(rightDirection);
+                // }
+            }
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)){
+                // Vector3 rightDirection = transform.right;
+                // transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
+                rotationAmount = rotationSpeed * Time.deltaTime;
+                childTransform.Rotate(Vector3.up, rotationAmount);
+                transform.Rotate(Vector3.up, -rotationAmount);
+                // if (childTransform != null)
+                // {
+                //     childTransform.rotation = Quaternion.LookRotation(rightDirection);
+                // }
             }
             if (Input.GetKey(KeyCode.S)){
                 Vector3 backwardDirection = -transform.forward; // Get the backward direction relative to the character's current orientation
+                Vector3 forwardDirection = transform.forward;
                 transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
 
                 if (childTransform != null)
                 {
-                    childTransform.rotation = Quaternion.LookRotation(backwardDirection);
+                    childTransform.rotation = Quaternion.LookRotation(forwardDirection);
                 }
             }
-            if (Input.GetKey(KeyCode.A)){
-                Vector3 leftDirection = -transform.right;
-                transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
-
-                if (childTransform != null)
-                {
-                    childTransform.rotation = Quaternion.LookRotation(leftDirection);
-                }
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W)){
+                // Vector3 leftDirection = -transform.right;
+                // transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
+                rotationAmount = rotationSpeed * Time.deltaTime;
+                childTransform.Rotate(Vector3.up, rotationAmount);
+                transform.Rotate(Vector3.up, -rotationAmount);
+                // if (childTransform != null)
+                // {
+                //     childTransform.rotation = Quaternion.LookRotation(leftDirection);
+                // }
             }
-        }
-        if (Input.GetKey("left")){
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)){
+                // Vector3 leftDirection = -transform.right;
+                // transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
+                rotationAmount = rotationSpeed * Time.deltaTime;
+                childTransform.Rotate(Vector3.up, -rotationAmount);
+                transform.Rotate(Vector3.up, rotationAmount);
+                // if (childTransform != null)
+                // {
+                //     childTransform.rotation = Quaternion.LookRotation(leftDirection);
+                // }
+            }
+        
+        if (Input.GetKey("right")){
             //rb.velocity = new Vector3(-5,rb.velocity.y,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
-            childTransform.Rotate(Vector3.up, rotationAmount);
-            transform.Rotate(Vector3.up, -rotationAmount);
+            //cameraTransform.Rotate(Vector3.up, -rotationAmount);
+            cameraTransform.RotateAround(transform.position, transform.up, -rotationAmount);
+            float originalXRotation = cameraTransform.eulerAngles.x;
+            float originalZRotation = cameraTransform.eulerAngles.z;
+            // Offset the camera's local position relative to its parent
+            cameraTransform.LookAt(transform);
+            Vector3 newRotation = cameraTransform.eulerAngles;
+            newRotation.x = originalXRotation;
+            newRotation.z = originalZRotation;
+            cameraTransform.eulerAngles = newRotation;
         }
-        if (Input.GetKey("right")){
+        if (Input.GetKey("left")){
             //rb.velocity = new Vector3(5,0,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
-            childTransform.Rotate(Vector3.up, -rotationAmount);
-            transform.Rotate(Vector3.up, rotationAmount);
+            //cameraTransform.Rotate(Vector3.up, -rotationAmount);
+            cameraTransform.RotateAround(transform.position, transform.up, rotationAmount);
+            float originalXRotation = cameraTransform.eulerAngles.x;
+            float originalZRotation = cameraTransform.eulerAngles.z;
+            // Offset the camera's local position relative to its parent
+            cameraTransform.LookAt(transform);
+            Vector3 newRotation = cameraTransform.eulerAngles;
+            newRotation.x = originalXRotation;
+            newRotation.z = originalZRotation;
+            cameraTransform.eulerAngles = newRotation;
         }
         // Vector3 parentPosition = transform.position;
         // carTransform.position = new Vector3(parentPosition.x, parentPosition.y, parentPosition.z + 10);

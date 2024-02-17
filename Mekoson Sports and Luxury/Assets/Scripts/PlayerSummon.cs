@@ -11,9 +11,10 @@ public class PlayerSummon : MonoBehaviour
     public playerMove refrencePos;
     Vector3 refPosition;
     public GameObject driveText;
-    int canDrive;
-    int inCar;
+    public int canDrive;
+    public int inCar;
     public GameObject player;
+    public Transform cameraTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,21 +43,47 @@ public class PlayerSummon : MonoBehaviour
                     carToDrive.gameObject.SetActive(true);
                     refPosition = refrencePos.transform.position + refrencePos.transform.forward * 5;
                     transform.position = refPosition;
+                    Vector3 newPosition = carToDrive.localPosition;
+                    newPosition.x = 0f;
+                    newPosition.z = 0f;
+                    carToDrive.localPosition = newPosition;
+                    carToDrive.rotation = Quaternion.identity;
                     CarSummoned = 1;
                 }
                 else if(CarSummoned == 1){
                     carToDrive.gameObject.SetActive(false);
                     CarSummoned = 0;
+                    CarOutRange();
                 }
+        }
+
+        if(inCar == 1){
+            if(Input.GetKeyDown(KeyCode.E)){
+                //driveText.SetActive(false);
+                carToDrive.gameObject.GetComponent<CarMovement>().enabled = false;
+                cameraTransform = carToDrive.GetChild(0);
+                cameraTransform.gameObject.SetActive(false);
+                player.SetActive(true);
+                //player.transform.position
+                Vector3 carPosition = carToDrive.transform.position;
+                Quaternion carRotation = carToDrive.transform.rotation;
+                Vector3 offset = -carToDrive.transform.right * 5f;
+                Vector3 playerPosition = carPosition + carRotation * offset;
+                player.transform.position = playerPosition;
+                inCar = 0;
+            }
         }
 
         if(canDrive == 1){
             if(Input.GetKeyDown(KeyCode.X)){
                 driveText.SetActive(false);
+                inCar = 1;
                 player.SetActive(false);
                 carToDrive.gameObject.GetComponent<CarMovement>().enabled = true;
             }
         }
+
+        
         
     }
 
