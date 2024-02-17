@@ -10,13 +10,20 @@ public class playerMove : MonoBehaviour
     public float moveSpeed = 5f;
     float rotationAmount;
     Transform childTransform;
+    //Transform carTransform;
+    //Transform carUsing;
+    int CarSummoned;
+    public PlayerSummon carGot;
+    //Rigidbody carUseRB;
     // Start is called before the first frame update
     void Start()
     {
+        CarSummoned = 0;
         rb = GetComponent<Rigidbody>();
         if (transform.childCount > 0)
         {
             childTransform = transform.GetChild(1);
+            //carTransform = transform.GetChild(3);
         }
     }
 
@@ -24,6 +31,10 @@ public class playerMove : MonoBehaviour
     void Update()
     {
 
+        // if(carTransform.transform.childCount > 0){
+        //     carUsing = carTransform.GetChild(0);
+        //     carUseRB = carUsing.GetComponent<Rigidbody>();
+        // }
         // Move the object forward based on its forward direction
         
         // if (Input.GetKeyDown("space")){
@@ -118,6 +129,41 @@ public class playerMove : MonoBehaviour
             rotationAmount = rotationSpeed * Time.deltaTime;
             childTransform.Rotate(Vector3.up, -rotationAmount);
             transform.Rotate(Vector3.up, rotationAmount);
+        }
+        // Vector3 parentPosition = transform.position;
+        // carTransform.position = new Vector3(parentPosition.x, parentPosition.y, parentPosition.z + 10);
+        if (Input.GetKeyDown(KeyCode.Q)){
+                if(CarSummoned == 0){
+                    CarSummoned = 1;
+                }
+                else if(CarSummoned == 1){
+                    CarSummoned = 0;
+                }
+                
+
+            }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("Hello, Unity!");
+        if(carGot.CarSummoned == 1){
+            if (other.CompareTag("Driveable")) // Example: Checking if the triggering object has the "Player" tag
+            {
+                carGot.CarInRange();
+                // Add your code here to handle the trigger entering event
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(carGot.CarSummoned == 1){
+            if (other.CompareTag("Driveable")) // Example: Checking if the triggering object has the "Player" tag
+            {
+                carGot.CarOutRange();
+                // Add your code here to handle the trigger entering event
+            }
         }
     }   
 }
