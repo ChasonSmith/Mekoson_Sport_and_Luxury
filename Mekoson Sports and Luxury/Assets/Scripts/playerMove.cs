@@ -150,7 +150,7 @@ public class playerMove : MonoBehaviour
         if(carGot.CarSummoned == 1){
             if (other.CompareTag("Driveable")) // Example: Checking if the triggering object has the "Player" tag
             {
-                carGot.CarInRange();
+                carGot.CarInRangeDrive();
                 // Add your code here to handle the trigger entering event
             }
         }
@@ -161,7 +161,7 @@ public class playerMove : MonoBehaviour
         if(carGot.CarSummoned == 1){
             if (other.CompareTag("Driveable")) // Example: Checking if the triggering object has the "Player" tag
             {
-                carGot.CarOutRange();
+                carGot.CarOutRangeDrive();
                 // Add your code here to handle the trigger entering event
             }
         }

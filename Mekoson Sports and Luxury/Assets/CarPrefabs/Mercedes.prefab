@@ -295,12 +295,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2090162516072037047}
   - component: {fileID: 6562733405734170591}
+  - component: {fileID: 4099849035856712039}
   - component: {fileID: 6605811554143428564}
   - component: {fileID: 6494317999112650551}
   - component: {fileID: 2563973977813838378}
   m_Layer: 0
   m_Name: Mercedes
-  m_TagString: Untagged
+  m_TagString: Driveable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,13 +329,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946394563404842073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 365c548859e3bf44491f83bfe7994507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
   moveSpeed: 50
+--- !u!114 &4099849035856712039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946394563404842073}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea13fc064270a640b8fb1de1ca121bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &6605811554143428564
 Rigidbody:
   m_ObjectHideFlags: 0

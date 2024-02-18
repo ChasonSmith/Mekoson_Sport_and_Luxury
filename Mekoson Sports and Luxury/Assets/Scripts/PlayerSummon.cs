@@ -11,6 +11,7 @@ public class PlayerSummon : MonoBehaviour
     public playerMove refrencePos;
     Vector3 refPosition;
     public GameObject driveText;
+    public GameObject challengeText;
     public int canDrive;
     public int inCar;
     public GameObject player;
@@ -53,7 +54,7 @@ public class PlayerSummon : MonoBehaviour
                 else if(CarSummoned == 1 && inCar == 0){
                     carToDrive.gameObject.SetActive(false);
                     CarSummoned = 0;
-                    CarOutRange();
+                    CarOutRangeDrive();
                 }
         }
 
@@ -88,18 +89,19 @@ public class PlayerSummon : MonoBehaviour
         
     }
 
-    public void CarInRange()
+    public void CarInRangeDrive()
     {
         driveText.SetActive(true);
         canDrive = 1;
 
     }
 
-    public void CarOutRange()
+    public void CarOutRangeDrive()
     {
         driveText.SetActive(false);
         canDrive = 0;
     }
+
 
     
 }

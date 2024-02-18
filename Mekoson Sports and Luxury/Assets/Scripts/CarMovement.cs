@@ -11,12 +11,15 @@ public class CarMovement : MonoBehaviour
     float rotationAmount;
     Transform cameraTransform;
     Transform childTransform;
-    
+    public int canChallenge;
+    public Transform CarParent;
     // Start is called before the first frame update
     void Start()
     {
+        CarParent = transform.parent;
+        canChallenge = 0;
         rb = GetComponent<Rigidbody>();
-        if (transform.childCount > 0)
+        if (transform.childCount > 1)
         {
             cameraTransform = transform.GetChild(0);
             childTransform = transform.GetChild(1);
@@ -39,7 +42,7 @@ public class CarMovement : MonoBehaviour
         //     rb.velocity = new Vector3(rb.velocity.x,5,rb.velocity.z);
         // }
 
-        if (transform.childCount > 0)
+        if (transform.childCount > 1)
         {
             cameraTransform = transform.GetChild(0);
             childTransform = transform.GetChild(1);
@@ -110,7 +113,7 @@ public class CarMovement : MonoBehaviour
                 // }
             }
         
-        if (Input.GetKey("right")){
+        if (Input.GetKey("left")){
             //rb.velocity = new Vector3(-5,rb.velocity.y,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
             //cameraTransform.Rotate(Vector3.up, -rotationAmount);
@@ -124,7 +127,7 @@ public class CarMovement : MonoBehaviour
             newRotation.z = originalZRotation;
             cameraTransform.eulerAngles = newRotation;
         }
-        if (Input.GetKey("left")){
+        if (Input.GetKey("right")){
             //rb.velocity = new Vector3(5,0,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
             //cameraTransform.Rotate(Vector3.up, -rotationAmount);
@@ -140,7 +143,36 @@ public class CarMovement : MonoBehaviour
         }
         // Vector3 parentPosition = transform.position;
         // carTransform.position = new Vector3(parentPosition.x, parentPosition.y, parentPosition.z + 10);
+
+        if (Input.GetKey(KeyCode.C)){
+            if(canChallenge == 1){
+                CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
+                transform.rotation = Quaternion.Euler(Vector3.zero);
+                transform.position = new Vector3(10000f, 0f, 0f);
+            }
+        }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("Hello, Unity!");
+        if (other.CompareTag("AiCar")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(true);
+            canChallenge = 1;
+            // Add your code here to handle the trigger entering event
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("AiCar")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
+            canChallenge = 0;
+            // Add your code here to handle the trigger entering event
+        }
+    }  
 
   
 }
