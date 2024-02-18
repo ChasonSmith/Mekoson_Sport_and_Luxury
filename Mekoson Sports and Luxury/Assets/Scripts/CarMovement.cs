@@ -13,9 +13,11 @@ public class CarMovement : MonoBehaviour
     Transform childTransform;
     public int canChallenge;
     public Transform CarParent;
+    public int inRace;
     // Start is called before the first frame update
     void Start()
     {
+        inRace = 0;
         CarParent = transform.parent;
         canChallenge = 0;
         rb = GetComponent<Rigidbody>();
@@ -149,6 +151,7 @@ public class CarMovement : MonoBehaviour
                 CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
                 transform.rotation = Quaternion.Euler(Vector3.zero);
                 transform.position = new Vector3(10000f, 0f, 0f);
+                inRace = 1;
             }
         }
     }

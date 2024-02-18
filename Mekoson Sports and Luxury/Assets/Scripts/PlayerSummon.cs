@@ -16,6 +16,7 @@ public class PlayerSummon : MonoBehaviour
     public int inCar;
     public GameObject player;
     public Transform cameraTransform;
+    public GameObject track1Text;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +60,7 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(inCar == 1){
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.E) && carToDrive.gameObject.GetComponent<CarMovement>().inRace == 0){
                 //driveText.SetActive(false);
                 carToDrive.gameObject.GetComponent<CarMovement>().enabled = false;
                 cameraTransform = carToDrive.GetChild(0);
