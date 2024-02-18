@@ -50,7 +50,7 @@ public class PlayerSummon : MonoBehaviour
                     carToDrive.rotation = Quaternion.identity;
                     CarSummoned = 1;
                 }
-                else if(CarSummoned == 1){
+                else if(CarSummoned == 1 && inCar == 0){
                     carToDrive.gameObject.SetActive(false);
                     CarSummoned = 0;
                     CarOutRange();
@@ -71,6 +71,7 @@ public class PlayerSummon : MonoBehaviour
                 Vector3 playerPosition = carPosition + carRotation * offset;
                 player.transform.position = playerPosition;
                 inCar = 0;
+                canDrive = 0;
             }
         }
 
