@@ -6,8 +6,8 @@ public class CarMovement : MonoBehaviour
 {
     Rigidbody rb;
     // The object to rotate around
-    public float rotationSpeed = 90f;
-    public float moveSpeed = 50f;
+    public float rotationSpeed;
+    public float moveSpeed;
     float rotationAmount;
     Transform cameraTransform;
     Transform childTransform;

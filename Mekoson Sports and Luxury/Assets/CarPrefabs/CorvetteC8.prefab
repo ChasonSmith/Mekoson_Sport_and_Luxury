@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365c548859e3bf44491f83bfe7994507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 180
   moveSpeed: 50
   canChallenge: 0
   CarParent: {fileID: 0}
