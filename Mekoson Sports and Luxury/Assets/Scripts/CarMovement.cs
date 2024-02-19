@@ -206,6 +206,11 @@ public class CarMovement : MonoBehaviour
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeLapCount();
             }
         }
+
+        if(CarBeingChallenged == null){
+            canChallenge = 0;
+            CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

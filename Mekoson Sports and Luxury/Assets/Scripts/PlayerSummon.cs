@@ -93,7 +93,7 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(inCar == 1){
-            if(Input.GetKeyDown(KeyCode.E) && carToDrive.gameObject.GetComponent<CarMovement>().inRace == 0){
+            if(Input.GetKeyUp(KeyCode.X) && carToDrive.gameObject.GetComponent<CarMovement>().inRace == 0){
                 //driveText.SetActive(false);
                 carToDrive.gameObject.GetComponent<CarMovement>().enabled = false;
                 cameraTransform = carToDrive.GetChild(0);
@@ -111,7 +111,7 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(canDrive == 1){
-            if(Input.GetKeyDown(KeyCode.X)){
+            if(Input.GetKeyUp(KeyCode.X)){
                 driveText.SetActive(false);
                 inCar = 1;
                 player.SetActive(false);
