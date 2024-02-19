@@ -318,6 +318,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 5600219658216408250}
   - {fileID: 4364158097263136808}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -336,6 +337,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 45
   moveSpeed: 50
+  canChallenge: 0
+  CarParent: {fileID: 0}
+  inRace: 0
+  CarBeingChallenged: {fileID: 0}
+  timeToBeat: 0
+  raceTime: 0
+  positionWhereChallenge: {x: 0, y: 0, z: 0}
+  wonChallenge: 0
+  lapsDone: 0
+  lapsNeeded: 0
 --- !u!114 &4099849035856712039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,6 +359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea13fc064270a640b8fb1de1ca121bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToBeat: 89.37
+  TrackLocation: {x: 10000, y: 0.5, z: 0}
+  carIsChallenged: 0
+  track1: {fileID: 0}
 --- !u!54 &6605811554143428564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -374,10 +389,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.8154428
+  m_Radius: 2.048701
   m_Height: 7.068318
   m_Direction: 2
-  m_Center: {x: -1.9299548, y: 3.4190454, z: 0.13442492}
+  m_Center: {x: -0.021478415, y: 0.7683835, z: 0.13442492}
 --- !u!65 &2563973977813838378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -389,8 +404,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0931966, y: 1.268631, z: 4.0545154}
-  m_Center: {x: -1.9349557, y: 3.3016825, z: 0.3129251}
+  m_Size: {x: 2.2204285, y: 1.3534522, z: 4.096926}
+  m_Center: {x: -0.047684133, y: 0.6298151, z: 0.037256002}
 --- !u!1 &1010893003105331401
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099550442576744831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.91, y: -2.7, z: -0.27}
   m_LocalScale: {x: 0.75, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -508,7 +523,7 @@ Transform:
   - {fileID: 1479820239560897710}
   - {fileID: 5449120643496167584}
   m_Father: {fileID: 2090162516072037047}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133116272826930241
 GameObject:
@@ -1734,6 +1749,90 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6717695858623398407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5600219658216408250}
+  - component: {fileID: 3276105021904335867}
+  - component: {fileID: 2300894577935892478}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5600219658216408250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717695858623398407}
+  m_LocalRotation: {x: 0.023996014, y: 0, z: 0, w: 0.9997121}
+  m_LocalPosition: {x: 0, y: 2.5, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2090162516072037047}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.75, y: 0, z: 0}
+--- !u!20 &3276105021904335867
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717695858623398407}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &2300894577935892478
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717695858623398407}
+  m_Enabled: 1
 --- !u!1 &6890503427323153563
 GameObject:
   m_ObjectHideFlags: 0

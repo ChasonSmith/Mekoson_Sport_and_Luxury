@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChallengeCar : MonoBehaviour
+public class Track1 : MonoBehaviour
 {
-    public float timeToBeat;
-    public Vector3 TrackLocation;
-    public int carIsChallenged;
-    public Track1 track1;
+    public int lapsNeeded;
+    public int lapsDone;
+    public int checkVal;
+
     // Start is called before the first frame update
     void Start()
     {
-        carIsChallenged = 0;
+        lapsDone = 0;
+        checkVal = 0;
     }
 
     // Update is called once per frame

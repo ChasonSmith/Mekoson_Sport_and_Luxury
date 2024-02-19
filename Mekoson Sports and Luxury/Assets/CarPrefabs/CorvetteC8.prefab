@@ -1355,7 +1355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2708580296390169176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2472,6 +2472,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 45
   moveSpeed: 50
+  canChallenge: 0
+  CarParent: {fileID: 0}
+  inRace: 0
+  CarBeingChallenged: {fileID: 0}
+  timeToBeat: 0
+  raceTime: 0
+  positionWhereChallenge: {x: 0, y: 0, z: 0}
+  wonChallenge: 0
+  lapsDone: 0
+  lapsNeeded: 0
 --- !u!114 &5821425912321542324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,6 +2494,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea13fc064270a640b8fb1de1ca121bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToBeat: 0
+  TrackLocation: {x: 0, y: 0, z: 0}
+  carIsChallenged: 0
+  track1: {fileID: 0}
 --- !u!54 &5403178660583516310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2511,8 +2525,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.293645, y: 1.3119788, z: 4.804531}
-  m_Center: {x: -0.0014090538, y: 0.047800303, z: 0.002825737}
+  m_Size: {x: 2.293645, y: 1.4006541, z: 4.804531}
+  m_Center: {x: -0.0014090538, y: 0.358163, z: 0.002825737}
 --- !u!136 &6228884273503152229
 CapsuleCollider:
   m_ObjectHideFlags: 0

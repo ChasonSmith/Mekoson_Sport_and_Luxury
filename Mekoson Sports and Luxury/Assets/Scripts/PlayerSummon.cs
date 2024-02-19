@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerSummon : MonoBehaviour
 {
@@ -17,16 +18,22 @@ public class PlayerSummon : MonoBehaviour
     public GameObject player;
     public Transform cameraTransform;
     public GameObject track1Text;
+    public GameObject timeTextImage;
+    public TextMeshProUGUI timeText;
+    public GameObject lapTextImage;
+    public TextMeshProUGUI lapText;
+    public int carToDriveIndex;
     // Start is called before the first frame update
     void Start()
     {
+        carToDriveIndex = 0;
         inCar = 0;
         canDrive = 0;
         CarSummoned = 0;
         carChosen = 0;
-        if (transform.childCount > 0)
+        if (transform.childCount > carToDriveIndex)
         {
-            carToDrive = transform.GetChild(0);
+            carToDrive = transform.GetChild(carToDriveIndex);
             //carTransform = transform.GetChild(3);
         }
     }
@@ -34,9 +41,9 @@ public class PlayerSummon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount > 0)
+        if (transform.childCount > carToDriveIndex)
         {
-            carToDrive = transform.GetChild(0);
+            carToDrive = transform.GetChild(carToDriveIndex);
             //carTransform = transform.GetChild(3);
         }
 
@@ -57,6 +64,32 @@ public class PlayerSummon : MonoBehaviour
                     CarSummoned = 0;
                     CarOutRangeDrive();
                 }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1) && CarSummoned == 0){
+            if (transform.childCount > 0){
+                carToDriveIndex = 0;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha2) && CarSummoned == 0){
+            if (transform.childCount > 1){
+                carToDriveIndex = 1;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha3) && CarSummoned == 0){
+            if (transform.childCount > 2){
+                carToDriveIndex = 2;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha4) && CarSummoned == 0){
+            if (transform.childCount > 3){
+                carToDriveIndex = 3;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha5) && CarSummoned == 0){
+            if (transform.childCount > 4){
+                carToDriveIndex = 4;
+            }
         }
 
         if(inCar == 1){
@@ -101,6 +134,25 @@ public class PlayerSummon : MonoBehaviour
     {
         driveText.SetActive(false);
         canDrive = 0;
+    }
+
+    public void runTimer(int minutes, int seconds, int milliseconds){
+        timeTextImage.SetActive(true);
+        timeText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+    }
+
+    public void closeTimer(){
+        timeTextImage.SetActive(false);
+    }
+
+    public void openLapCount(int lapsDone, int lapsNeeded){
+        lapTextImage.SetActive(true);
+        int lapsDonetext = lapsDone + 1;
+        lapText.text = string.Format("Lap: {0}/{1}", lapsDonetext, lapsNeeded);
+    }
+
+    public void closeLapCount(){
+        lapTextImage.SetActive(false);
     }
 
 

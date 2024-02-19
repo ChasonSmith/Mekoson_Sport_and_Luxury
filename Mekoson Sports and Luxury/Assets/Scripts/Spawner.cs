@@ -14,6 +14,9 @@ public class Spawner : MonoBehaviour
     GameObject spawnedCar;
     public int carIsSpawned;
     public Transform parent;
+    public GameObject newParentObject1;
+    public GameObject newParentObject2;
+    public Track1 track1;
     // Start is called before the first frame update
     void Awake()
     {
@@ -37,6 +40,8 @@ public class Spawner : MonoBehaviour
                     spawnedCar = Instantiate(carToSpawn,parent);
                     spawnedCar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                     spawnedCar.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePositionY;
+                    spawnedCar.GetComponent<ChallengeCar>().enabled = true;
+                    spawnedCar.GetComponent<ChallengeCar>().track1 = track1;
                     spawnedCar.tag = "AiCar";
                     carIsSpawned = 1;
                 }
@@ -44,6 +49,19 @@ public class Spawner : MonoBehaviour
                     Destroy(spawnedCar);
                     carIsSpawned = 0;
                 }
+            }
+        }
+        if(carIsSpawned == 1){
+            if(spawnedCar.GetComponent<ChallengeCar>().carIsChallenged == 1){
+                if(newParentObject1.transform.childCount < 5){
+                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                }
+                else{
+                    spawnedCar.transform.SetParent(newParentObject2.transform);
+                }
+                spawnedCar.SetActive(false);
+                timeToSpawnCounter = timeToSpawn;
+                carIsSpawned = 0;
             }
         }
 
