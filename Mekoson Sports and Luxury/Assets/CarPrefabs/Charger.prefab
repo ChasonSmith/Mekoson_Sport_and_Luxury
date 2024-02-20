@@ -150,7 +150,7 @@ MonoBehaviour:
   grassMult: 0.5
   snowMult: 0.5
   asphaltMult: 2
-  mudMult: 0.5
+  mudMult: 0.2
   desertMult: 0.5
   onSnow: 0
   onAsphalt: 0

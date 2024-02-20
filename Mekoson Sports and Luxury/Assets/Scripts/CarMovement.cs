@@ -238,6 +238,9 @@ public class CarMovement : MonoBehaviour
         if(onAsphalt == 1){
             currMult = asphaltMult;
         }
+        else if(onMud == 1){
+            currMult = mudMult;
+        }
         else if(onGrass == 1){
             currMult = grassMult;
         }
@@ -246,9 +249,6 @@ public class CarMovement : MonoBehaviour
         }
         else if(onSnow == 1){
             currMult = snowMult;
-        }
-        else if(onMud == 1){
-            currMult = mudMult;
         }
         else{
             currMult = 1;
