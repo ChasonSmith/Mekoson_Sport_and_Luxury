@@ -335,8 +335,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365c548859e3bf44491f83bfe7994507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  moveSpeed: 0
+  control: 0
+  maxAcceleration: 0
+  maxSteerAngle: 0
+  brakeAcceleration: 0
+  defaultSpeed: 50
+  defaultRotate: 180
+  turnSensitivity: 1
+  cameraSpeed: 0
+  grassMult: 0.8
+  snowMult: 0.5
+  asphaltMult: 1.2
+  mudMult: 0.4
+  desertMult: 0.5
+  _centerOfMass: {x: 0, y: 0, z: 0}
+  wheels: []
   canChallenge: 0
   CarParent: {fileID: 0}
   inRace: 0
@@ -347,13 +360,6 @@ MonoBehaviour:
   wonChallenge: 0
   lapsDone: 0
   lapsNeeded: 0
-  defaultSpeed: 50
-  defaultRotate: 180
-  grassMult: 0.8
-  snowMult: 0.5
-  asphaltMult: 1.2
-  mudMult: 0.4
-  desertMult: 0.5
   onSnow: 0
   onAsphalt: 0
   onGrass: 0
