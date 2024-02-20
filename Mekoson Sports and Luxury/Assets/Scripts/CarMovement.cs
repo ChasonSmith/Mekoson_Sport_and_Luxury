@@ -24,9 +24,25 @@ public class CarMovement : MonoBehaviour
     public int wonChallenge;
     public int lapsDone;
     public int lapsNeeded;
+    public float defaultSpeed;
+    public float defaultRotate;
+    public float grassMult;
+    public float snowMult;
+    public float asphaltMult;
+    public float mudMult;
+    public float desertMult;
+    public int onSnow;
+    public int onAsphalt;
+    public int onGrass;
+    public int onMud;
+    public int onDesert;
+    public float currMult;
     // Start is called before the first frame update
     void Start()
     {
+        currMult = 1;
+        rotationSpeed = defaultRotate;
+        moveSpeed = defaultSpeed;
         inRace = 0;
         CarParent = transform.parent;
         canChallenge = 0;
@@ -53,7 +69,14 @@ public class CarMovement : MonoBehaviour
         // if (Input.GetKeyDown("space")){
         //     rb.velocity = new Vector3(rb.velocity.x,5,rb.velocity.z);
         // }
-
+        rotationSpeed = defaultRotate * currMult;
+        if(rotationSpeed > 180){
+            rotationSpeed = 180;
+        }
+        moveSpeed = defaultSpeed * currMult;
+        if(rotationSpeed > 180){
+            rotationSpeed = 180;
+        }
         if (transform.childCount > 1)
         {
             cameraTransform = transform.GetChild(0);
@@ -211,6 +234,25 @@ public class CarMovement : MonoBehaviour
             canChallenge = 0;
             CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
         }
+
+        if(onAsphalt == 1){
+            currMult = asphaltMult;
+        }
+        else if(onGrass == 1){
+            currMult = grassMult;
+        }
+        else if(onDesert == 1){
+            currMult = desertMult;
+        }
+        else if(onSnow == 1){
+            currMult = snowMult;
+        }
+        else if(onMud == 1){
+            currMult = mudMult;
+        }
+        else{
+            currMult = 1;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -235,7 +277,54 @@ public class CarMovement : MonoBehaviour
             //CarBeingChallenged = other.gameObject;
             // Add your code here to handle the trigger entering event
         }
+        if (other.CompareTag("Desert")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onDesert = 0;
+        }
+        if (other.CompareTag("Asphalt")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onAsphalt = 0;
+        }
+        if (other.CompareTag("Grass")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onGrass = 0;
+        }
+        if (other.CompareTag("Snow")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onSnow = 0;
+        }
+        if (other.CompareTag("Mud")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onMud = 0;
+        }
     }  
+
+    void OnTriggerStay(Collider other)
+    {
+        // Check if the collider we're colliding with has a renderer
+        Renderer renderer = other.GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            // Get the material of the ground
+            Material material = renderer.material;
+            //Debug.Log(material.name);
+            if(material.name == "asphalt (Instance)"){
+                onAsphalt = 1;
+            }
+            else if(material.name == "grass (Instance)"){
+                onGrass = 1;
+            }
+            else if(material.name == "desert (Instance)"){
+                onDesert = 1;
+            }
+            else if(material.name == "snow (Instance)"){
+                onSnow = 1;
+            }
+            else if(material.name == "mud (Instance)"){
+                onMud = 1;
+            }
+        }
+    }
 
   
 }

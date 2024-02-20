@@ -7,6 +7,11 @@ TagManager:
   - Needed
   - Driveable
   - AiCar
+  - Asphalt
+  - Desert
+  - Snow
+  - Grass
+  - Mud
   layers:
   - Default
   - TransparentFX

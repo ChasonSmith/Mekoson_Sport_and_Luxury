@@ -1212,9 +1212,10 @@ GameObject:
   - component: {fileID: 20537106}
   - component: {fileID: 20537108}
   - component: {fileID: 20537107}
+  - component: {fileID: 20537109}
   m_Layer: 0
   m_Name: SingleLane Curve (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1283,6 +1284,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20537105}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &20537109
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20537105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &20983601
 GameObject:
@@ -1691,9 +1706,10 @@ GameObject:
   - component: {fileID: 27647928}
   - component: {fileID: 27647930}
   - component: {fileID: 27647929}
+  - component: {fileID: 27647931}
   m_Layer: 0
   m_Name: Freeway Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1763,6 +1779,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27647927}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &27647931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27647927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &28872338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,9 +2315,10 @@ GameObject:
   - component: {fileID: 43054268}
   - component: {fileID: 43054270}
   - component: {fileID: 43054269}
+  - component: {fileID: 43054271}
   m_Layer: 0
   m_Name: Highway Straight 1 (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2358,6 +2388,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43054267}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &43054271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43054267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5.0000005}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.500001}
 --- !u!1 &43637350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3679,9 +3722,10 @@ GameObject:
   - component: {fileID: 74714544}
   - component: {fileID: 74714546}
   - component: {fileID: 74714545}
+  - component: {fileID: 74714547}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3751,6 +3795,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74714543}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &74714547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74714543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &75248946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,9 +4165,10 @@ GameObject:
   - component: {fileID: 79735943}
   - component: {fileID: 79735945}
   - component: {fileID: 79735944}
+  - component: {fileID: 79735946}
   m_Layer: 0
   m_Name: Parkinglot Edge 4 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4122,8 +4180,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79735942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.6, y: -0, z: -41.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27.600018, y: -0.000002701367, z: -41.200035}
   m_LocalScale: {x: -1.5445106, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4180,6 +4238,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79735942}
   m_Mesh: {fileID: -6262798135204833816, guid: c08fc38495d0bd64786b541175e0ca7a, type: 3}
+--- !u!65 &79735946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79735942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.2500033, z: 15.000002}
+  m_Center: {x: -7.4999666, y: -2.3750021, z: -7.5001307}
 --- !u!1 &82019985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,9 +5240,10 @@ GameObject:
   - component: {fileID: 118939914}
   - component: {fileID: 118939916}
   - component: {fileID: 118939915}
+  - component: {fileID: 118939917}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5241,6 +5313,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118939913}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &118939917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118939913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &120535235
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,9 +5918,10 @@ GameObject:
   - component: {fileID: 131240339}
   - component: {fileID: 131240341}
   - component: {fileID: 131240340}
+  - component: {fileID: 131240342}
   m_Layer: 0
   m_Name: Parkinglot Edge 3 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5848,7 +5934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131240338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.666667, y: 0, z: -26.666668}
+  m_LocalPosition: {x: -14.666667, y: -0.0000017484563, z: -26.666668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5905,6 +5991,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131240338}
   m_Mesh: {fileID: 4402984914296120838, guid: 396bf2262eb16ac489f38bc86667b81c, type: 3}
+--- !u!65 &131240342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131240338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.50003, y: -2.375, z: -7.50007}
 --- !u!1 &133942824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,9 +7365,10 @@ GameObject:
   - component: {fileID: 171452156}
   - component: {fileID: 171452158}
   - component: {fileID: 171452157}
+  - component: {fileID: 171452159}
   m_Layer: 0
   m_Name: Highway Straight 1 (8)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7338,6 +7438,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171452155}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &171452159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171452155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.5000005}
 --- !u!1 &171752393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7801,9 +7914,10 @@ GameObject:
   - component: {fileID: 187732756}
   - component: {fileID: 187732758}
   - component: {fileID: 187732757}
+  - component: {fileID: 187732759}
   m_Layer: 0
   m_Name: Freeway Cross Freeway
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7873,6 +7987,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187732755}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &187732759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187732755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &190595765
 GameObject:
   m_ObjectHideFlags: 0
@@ -8656,9 +8783,10 @@ GameObject:
   - component: {fileID: 208449030}
   - component: {fileID: 208449032}
   - component: {fileID: 208449031}
+  - component: {fileID: 208449033}
   m_Layer: 0
   m_Name: Freeway Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8728,6 +8856,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208449029}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &208449033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208449029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &210934434
 GameObject:
   m_ObjectHideFlags: 0
@@ -9168,9 +9309,10 @@ GameObject:
   - component: {fileID: 216762345}
   - component: {fileID: 216762347}
   - component: {fileID: 216762346}
+  - component: {fileID: 216762348}
   m_Layer: 0
   m_Name: Road Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9240,6 +9382,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216762344}
   m_Mesh: {fileID: -4816615554073495639, guid: a7aeec982ad928449b84e3f07362ebcf, type: 3}
+--- !u!65 &216762348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216762344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 5.25, z: 5.0000005}
+  m_Center: {x: -7.5, y: -2.375, z: -2.5000002}
 --- !u!1 &217886818
 GameObject:
   m_ObjectHideFlags: 0
@@ -9334,9 +9489,10 @@ GameObject:
   - component: {fileID: 219149947}
   - component: {fileID: 219149949}
   - component: {fileID: 219149948}
+  - component: {fileID: 219149950}
   m_Layer: 0
   m_Name: Freeway Straight 1 (11)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9406,6 +9562,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219149946}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &219149950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219149946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &222560343
 GameObject:
   m_ObjectHideFlags: 0
@@ -9745,9 +9914,10 @@ GameObject:
   - component: {fileID: 233127796}
   - component: {fileID: 233127798}
   - component: {fileID: 233127797}
+  - component: {fileID: 233127799}
   m_Layer: 0
   m_Name: Freeway Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9817,6 +9987,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233127795}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &233127799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233127795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &233549377
 GameObject:
   m_ObjectHideFlags: 0
@@ -10010,9 +10193,10 @@ GameObject:
   - component: {fileID: 241037374}
   - component: {fileID: 241037376}
   - component: {fileID: 241037375}
+  - component: {fileID: 241037377}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10082,6 +10266,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241037373}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &241037377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241037373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &242705761
 GameObject:
   m_ObjectHideFlags: 0
@@ -10259,9 +10456,10 @@ GameObject:
   - component: {fileID: 249390871}
   - component: {fileID: 249390873}
   - component: {fileID: 249390872}
+  - component: {fileID: 249390874}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10331,6 +10529,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249390870}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &249390874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249390870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &249842786
 GameObject:
   m_ObjectHideFlags: 0
@@ -11010,9 +11221,10 @@ GameObject:
   - component: {fileID: 259641462}
   - component: {fileID: 259641464}
   - component: {fileID: 259641463}
+  - component: {fileID: 259641465}
   m_Layer: 0
   m_Name: Parkinglot Center 2 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11025,7 +11237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259641461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -26.666668}
+  m_LocalPosition: {x: 0, y: -0.0000017484563, z: -26.666668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11082,6 +11294,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259641461}
   m_Mesh: {fileID: -6363909310983034838, guid: acbcde60833f14e4aa03b304a94489e4, type: 3}
+--- !u!65 &259641465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259641461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000002, y: 0.000000655671, z: 15.000002}
+  m_Center: {x: -7.499999, y: -0.0000003278355, z: -7.5000696}
 --- !u!1001 &260891183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12857,9 +13082,10 @@ GameObject:
   - component: {fileID: 312938713}
   - component: {fileID: 312938715}
   - component: {fileID: 312938714}
+  - component: {fileID: 312938716}
   m_Layer: 0
   m_Name: Parkinglot Edge 3 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12872,7 +13098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312938712}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: 14.666667, y: 0, z: -15}
+  m_LocalPosition: {x: 14.666667, y: -0.0000009835067, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12929,6 +13155,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312938712}
   m_Mesh: {fileID: 4402984914296120838, guid: 396bf2262eb16ac489f38bc86667b81c, type: 3}
+--- !u!65 &312938716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312938712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.4999995, y: -2.375, z: -7.499948}
 --- !u!1 &315321552
 GameObject:
   m_ObjectHideFlags: 0
@@ -13272,9 +13511,10 @@ GameObject:
   - component: {fileID: 318702218}
   - component: {fileID: 318702220}
   - component: {fileID: 318702219}
+  - component: {fileID: 318702221}
   m_Layer: 0
   m_Name: Parkinglot Corner 3 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13286,8 +13526,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318702217}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 18.816692, y: 0, z: -41.2}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 18.816692, y: -0.000002701367, z: -41.200035}
   m_LocalScale: {x: 0.6666667, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13344,6 +13584,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318702217}
   m_Mesh: {fileID: -927930221983466428, guid: 95959c32634cf8f48b8599dc62aaf302, type: 3}
+--- !u!65 &318702221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318702217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.2500043, z: 15.000006}
+  m_Center: {x: -7.500003, y: -2.3749979, z: -7.500064}
 --- !u!1 &319879473
 GameObject:
   m_ObjectHideFlags: 0
@@ -13871,9 +14124,10 @@ GameObject:
   - component: {fileID: 333068493}
   - component: {fileID: 333068495}
   - component: {fileID: 333068494}
+  - component: {fileID: 333068496}
   m_Layer: 0
   m_Name: Parkinglot Edge 4 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13886,8 +14140,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333068492}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: -27.9, y: 0, z: -0.13330078}
-  m_LocalScale: {x: 2.50375, y: 1, z: 0.6666667}
+  m_LocalPosition: {x: -27.899984, y: -0.000000008740147, z: -0.13330078}
+  m_LocalScale: {x: 2.5037503, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5758019525167858010}
@@ -13943,6 +14197,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333068492}
   m_Mesh: {fileID: -6262798135204833816, guid: c08fc38495d0bd64786b541175e0ca7a, type: 3}
+--- !u!65 &333068496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333068492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.2500033, z: 15.000002}
+  m_Center: {x: -7.499997, y: -2.3750021, z: -7.4998865}
 --- !u!1 &334292170
 GameObject:
   m_ObjectHideFlags: 0
@@ -15411,9 +15678,10 @@ GameObject:
   - component: {fileID: 366761345}
   - component: {fileID: 366761347}
   - component: {fileID: 366761346}
+  - component: {fileID: 366761348}
   m_Layer: 0
   m_Name: SingleLane Curve (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15482,6 +15750,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366761344}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &366761348
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366761344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &367187987
 GameObject:
@@ -17168,9 +17450,10 @@ GameObject:
   - component: {fileID: 403039050}
   - component: {fileID: 403039052}
   - component: {fileID: 403039051}
+  - component: {fileID: 403039053}
   m_Layer: 0
   m_Name: Freeway Straight 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17240,6 +17523,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403039049}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &403039053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403039049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &404174914
 GameObject:
   m_ObjectHideFlags: 0
@@ -17417,9 +17713,10 @@ GameObject:
   - component: {fileID: 408274761}
   - component: {fileID: 408274763}
   - component: {fileID: 408274762}
+  - component: {fileID: 408274764}
   m_Layer: 0
   m_Name: SingleLane Curve (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17488,6 +17785,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408274760}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &408274764
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408274760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &408876071
 GameObject:
@@ -17749,9 +18060,10 @@ GameObject:
   - component: {fileID: 415325142}
   - component: {fileID: 415325144}
   - component: {fileID: 415325143}
+  - component: {fileID: 415325145}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17821,6 +18133,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415325141}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &415325145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415325141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &416402410
 GameObject:
   m_ObjectHideFlags: 0
@@ -18286,9 +18611,10 @@ GameObject:
   - component: {fileID: 427986285}
   - component: {fileID: 427986284}
   - component: {fileID: 427986283}
+  - component: {fileID: 427986286}
   m_Layer: 0
   m_Name: Desert
-  m_TagString: Untagged
+  m_TagString: Desert
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18371,6 +18697,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427986281}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &427986286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427986281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &429075105
 GameObject:
   m_ObjectHideFlags: 0
@@ -18940,9 +19279,10 @@ GameObject:
   - component: {fileID: 448502602}
   - component: {fileID: 448502601}
   - component: {fileID: 448502600}
+  - component: {fileID: 448502604}
   m_Layer: 0
   m_Name: Forest
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19025,6 +19365,19 @@ Transform:
   m_Father: {fileID: 937250609}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &448502604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448502599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &453380318
 GameObject:
   m_ObjectHideFlags: 0
@@ -19036,9 +19389,10 @@ GameObject:
   - component: {fileID: 453380319}
   - component: {fileID: 453380321}
   - component: {fileID: 453380320}
+  - component: {fileID: 453380322}
   m_Layer: 0
   m_Name: Freeway Straight 1 (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19108,6 +19462,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453380318}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &453380322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453380318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &454411000
 GameObject:
   m_ObjectHideFlags: 0
@@ -19847,9 +20214,10 @@ GameObject:
   - component: {fileID: 470568299}
   - component: {fileID: 470568301}
   - component: {fileID: 470568300}
+  - component: {fileID: 470568302}
   m_Layer: 0
   m_Name: SingleLane Curve (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19918,6 +20286,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470568298}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &470568302
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470568298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &473110318
 GameObject:
@@ -20665,9 +21047,10 @@ GameObject:
   - component: {fileID: 481594890}
   - component: {fileID: 481594892}
   - component: {fileID: 481594891}
+  - component: {fileID: 481594893}
   m_Layer: 0
   m_Name: Parkinglot Center 2 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20680,7 +21063,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481594889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.666667, y: 0, z: -13.333334}
+  m_LocalPosition: {x: 14.666667, y: -0.00000087422814, z: -13.333334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20737,6 +21120,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481594889}
   m_Mesh: {fileID: -6363909310983034838, guid: acbcde60833f14e4aa03b304a94489e4, type: 3}
+--- !u!65 &481594893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481594889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000002, y: 0.000000655671, z: 15.000002}
+  m_Center: {x: -7.499999, y: -0.0000003278355, z: -7.5000696}
 --- !u!1 &483428522
 GameObject:
   m_ObjectHideFlags: 0
@@ -21427,9 +21823,10 @@ GameObject:
   - component: {fileID: 490613986}
   - component: {fileID: 490613988}
   - component: {fileID: 490613987}
+  - component: {fileID: 490613989}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21499,6 +21896,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490613985}
+  m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!64 &490613989
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490613985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
 --- !u!1 &491512583
 GameObject:
@@ -23418,9 +23829,10 @@ GameObject:
   - component: {fileID: 534655866}
   - component: {fileID: 534655868}
   - component: {fileID: 534655867}
+  - component: {fileID: 534655869}
   m_Layer: 0
   m_Name: SingleLane Curve (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23489,6 +23901,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534655865}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &534655869
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534655865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &536698464
 GameObject:
@@ -23916,9 +24342,10 @@ GameObject:
   - component: {fileID: 547996051}
   - component: {fileID: 547996053}
   - component: {fileID: 547996052}
+  - component: {fileID: 547996054}
   m_Layer: 0
   m_Name: SingleLane Curve (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23987,6 +24414,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547996050}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &547996054
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547996050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &554404672
 GameObject:
@@ -24682,9 +25123,10 @@ GameObject:
   - component: {fileID: 577796394}
   - component: {fileID: 577796396}
   - component: {fileID: 577796395}
+  - component: {fileID: 577796397}
   m_Layer: 0
   m_Name: Freeway Straight 1 (8)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24754,6 +25196,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577796393}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &577796397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577796393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &577888603
 GameObject:
   m_ObjectHideFlags: 0
@@ -25015,9 +25470,10 @@ GameObject:
   - component: {fileID: 588727433}
   - component: {fileID: 588727432}
   - component: {fileID: 588727431}
+  - component: {fileID: 588727434}
   m_Layer: 0
   m_Name: Snow
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25100,6 +25556,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588727429}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &588727434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588727429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &592409721
 GameObject:
   m_ObjectHideFlags: 0
@@ -26774,9 +27243,10 @@ GameObject:
   - component: {fileID: 636630468}
   - component: {fileID: 636630470}
   - component: {fileID: 636630469}
+  - component: {fileID: 636630471}
   m_Layer: 0
   m_Name: Parkinglot Center 2 (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26789,7 +27259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636630467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.666667, y: 0, z: -26.666668}
+  m_LocalPosition: {x: 14.666667, y: -0.0000017484563, z: -26.666668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26846,6 +27316,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636630467}
   m_Mesh: {fileID: -6363909310983034838, guid: acbcde60833f14e4aa03b304a94489e4, type: 3}
+--- !u!65 &636630471
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636630467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000002, y: 0.000000655671, z: 15.000002}
+  m_Center: {x: -7.499999, y: -0.0000003278355, z: -7.5000696}
 --- !u!1 &637844090
 GameObject:
   m_ObjectHideFlags: 0
@@ -28268,9 +28751,10 @@ GameObject:
   - component: {fileID: 660809036}
   - component: {fileID: 660809038}
   - component: {fileID: 660809037}
+  - component: {fileID: 660809039}
   m_Layer: 0
   m_Name: Highway Cross Road (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28340,6 +28824,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660809035}
   m_Mesh: {fileID: -3572634501876546351, guid: 5d4a6e47ccd5b764882b3c8fcfa23fac, type: 3}
+--- !u!65 &660809039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660809035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 3.75, z: 15.000006}
+  m_Center: {x: -12.499999, y: 14.375, z: -7.499997}
 --- !u!1 &661276853
 GameObject:
   m_ObjectHideFlags: 0
@@ -28683,9 +29180,10 @@ GameObject:
   - component: {fileID: 665668827}
   - component: {fileID: 665668829}
   - component: {fileID: 665668828}
+  - component: {fileID: 665668830}
   m_Layer: 0
   m_Name: SingleLane Curve (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28754,6 +29252,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665668826}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &665668830
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665668826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &671142949
 GameObject:
@@ -30401,9 +30913,10 @@ GameObject:
   - component: {fileID: 702048541}
   - component: {fileID: 702048543}
   - component: {fileID: 702048542}
+  - component: {fileID: 702048544}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30473,6 +30986,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702048540}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &702048544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702048540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.0000005}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000002}
 --- !u!1 &702145959
 GameObject:
   m_ObjectHideFlags: 0
@@ -30484,9 +31010,10 @@ GameObject:
   - component: {fileID: 702145960}
   - component: {fileID: 702145962}
   - component: {fileID: 702145961}
+  - component: {fileID: 702145963}
   m_Layer: 0
   m_Name: Highway Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30556,6 +31083,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702145959}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &702145963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702145959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5.0000005}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.500001}
 --- !u!1 &704887507
 GameObject:
   m_ObjectHideFlags: 0
@@ -30863,9 +31403,10 @@ GameObject:
   - component: {fileID: 710168564}
   - component: {fileID: 710168566}
   - component: {fileID: 710168565}
+  - component: {fileID: 710168567}
   m_Layer: 0
   m_Name: SingleLane Curve (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30934,6 +31475,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710168563}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &710168567
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710168563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &713186886
 GameObject:
@@ -31112,9 +31667,10 @@ GameObject:
   - component: {fileID: 714319085}
   - component: {fileID: 714319087}
   - component: {fileID: 714319086}
+  - component: {fileID: 714319088}
   m_Layer: 0
   m_Name: Highway Straight 1 (10)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31184,6 +31740,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714319084}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &714319088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714319084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3.75, z: 4.9999995}
+  m_Center: {x: -12.5, y: 14.375, z: -2.5000002}
 --- !u!1 &714602778
 GameObject:
   m_ObjectHideFlags: 0
@@ -32009,9 +32578,10 @@ GameObject:
   - component: {fileID: 737546114}
   - component: {fileID: 737546116}
   - component: {fileID: 737546115}
+  - component: {fileID: 737546117}
   m_Layer: 0
   m_Name: Freeway Straight 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32081,6 +32651,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737546113}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &737546117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737546113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &737939276
 GameObject:
   m_ObjectHideFlags: 0
@@ -32461,9 +33044,10 @@ GameObject:
   - component: {fileID: 745142718}
   - component: {fileID: 745142720}
   - component: {fileID: 745142719}
+  - component: {fileID: 745142721}
   m_Layer: 0
   m_Name: Highway Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32533,6 +33117,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745142717}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &745142721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745142717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3.75, z: 4.999999}
+  m_Center: {x: -12.5, y: 14.375, z: -2.5}
 --- !u!1 &746773578
 GameObject:
   m_ObjectHideFlags: 0
@@ -33909,9 +34506,10 @@ GameObject:
   - component: {fileID: 775220390}
   - component: {fileID: 775220392}
   - component: {fileID: 775220391}
+  - component: {fileID: 775220393}
   m_Layer: 0
   m_Name: Highway Straight 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33981,6 +34579,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775220389}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &775220393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775220389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3.75, z: 4.999999}
+  m_Center: {x: -12.5, y: 14.375, z: -2.5}
 --- !u!1001 &776059597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34956,9 +35567,10 @@ GameObject:
   - component: {fileID: 811568341}
   - component: {fileID: 811568343}
   - component: {fileID: 811568342}
+  - component: {fileID: 811568344}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35028,6 +35640,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811568340}
+  m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!64 &811568344
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811568340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
 --- !u!1 &813297057
 GameObject:
@@ -35750,9 +36376,10 @@ GameObject:
   - component: {fileID: 829277182}
   - component: {fileID: 829277184}
   - component: {fileID: 829277183}
+  - component: {fileID: 829277185}
   m_Layer: 0
   m_Name: Road Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35822,6 +36449,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829277181}
   m_Mesh: {fileID: -4816615554073495639, guid: a7aeec982ad928449b84e3f07362ebcf, type: 3}
+--- !u!65 &829277185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829277181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 5.25, z: 5}
+  m_Center: {x: -7.5, y: -2.375, z: -2.4999847}
 --- !u!1 &838728062
 GameObject:
   m_ObjectHideFlags: 0
@@ -39915,9 +40555,10 @@ GameObject:
   - component: {fileID: 918393351}
   - component: {fileID: 918393353}
   - component: {fileID: 918393352}
+  - component: {fileID: 918393354}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39987,6 +40628,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918393350}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &918393354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918393350}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &919392504
 GameObject:
   m_ObjectHideFlags: 0
@@ -42288,9 +42942,10 @@ GameObject:
   - component: {fileID: 972729965}
   - component: {fileID: 972729967}
   - component: {fileID: 972729966}
+  - component: {fileID: 972729968}
   m_Layer: 0
   m_Name: Freeway Straight 1 (13)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42360,6 +43015,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972729964}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &972729968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972729964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 4.9999995}
+  m_Center: {x: -12.5, y: -2.375, z: -2.4999998}
 --- !u!1 &973062458
 GameObject:
   m_ObjectHideFlags: 0
@@ -42580,9 +43248,10 @@ GameObject:
   - component: {fileID: 975407722}
   - component: {fileID: 975407724}
   - component: {fileID: 975407723}
+  - component: {fileID: 975407725}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42652,6 +43321,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975407721}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &975407725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975407721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &975780129
 GameObject:
   m_ObjectHideFlags: 0
@@ -44049,9 +44731,10 @@ GameObject:
   - component: {fileID: 1000927614}
   - component: {fileID: 1000927616}
   - component: {fileID: 1000927615}
+  - component: {fileID: 1000927617}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44121,6 +44804,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000927613}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1000927617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000927613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1002827337
 GameObject:
   m_ObjectHideFlags: 0
@@ -44663,9 +45359,10 @@ GameObject:
   - component: {fileID: 1009166175}
   - component: {fileID: 1009166177}
   - component: {fileID: 1009166176}
+  - component: {fileID: 1009166178}
   m_Layer: 0
   m_Name: Freeway Straight 1 (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44735,6 +45432,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009166174}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1009166178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009166174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1011517682
 GameObject:
   m_ObjectHideFlags: 0
@@ -44829,9 +45539,10 @@ GameObject:
   - component: {fileID: 1013438210}
   - component: {fileID: 1013438212}
   - component: {fileID: 1013438211}
+  - component: {fileID: 1013438213}
   m_Layer: 0
   m_Name: Highway Straight 1 (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44901,6 +45612,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013438209}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &1013438213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013438209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3.75, z: 4.9999995}
+  m_Center: {x: -12.5, y: 14.375, z: -2.5000002}
 --- !u!1 &1013924245
 GameObject:
   m_ObjectHideFlags: 0
@@ -45446,9 +46170,10 @@ GameObject:
   - component: {fileID: 1027295125}
   - component: {fileID: 1027295127}
   - component: {fileID: 1027295126}
+  - component: {fileID: 1027295128}
   m_Layer: 0
   m_Name: Highway Straight 1 (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45518,6 +46243,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027295124}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &1027295128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027295124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 3.75, z: 4.9999995}
+  m_Center: {x: -12.5, y: 14.375, z: -2.5000002}
 --- !u!1 &1031515595
 GameObject:
   m_ObjectHideFlags: 0
@@ -45529,9 +46267,10 @@ GameObject:
   - component: {fileID: 1031515596}
   - component: {fileID: 1031515598}
   - component: {fileID: 1031515597}
+  - component: {fileID: 1031515599}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45602,6 +46341,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031515595}
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!64 &1031515599
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031515595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
 --- !u!1 &1032039831
 GameObject:
   m_ObjectHideFlags: 0
@@ -45613,9 +46366,10 @@ GameObject:
   - component: {fileID: 1032039832}
   - component: {fileID: 1032039834}
   - component: {fileID: 1032039833}
+  - component: {fileID: 1032039835}
   m_Layer: 0
   m_Name: SingleLane Curve (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45684,6 +46438,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032039831}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1032039835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032039831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1032333958
 GameObject:
@@ -48934,9 +49702,10 @@ GameObject:
   - component: {fileID: 1080812915}
   - component: {fileID: 1080812917}
   - component: {fileID: 1080812916}
+  - component: {fileID: 1080812918}
   m_Layer: 0
   m_Name: Freeway Straight 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49006,6 +49775,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080812914}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1080812918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080812914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1081246548
 GameObject:
   m_ObjectHideFlags: 0
@@ -49134,9 +49916,10 @@ GameObject:
   - component: {fileID: 1081367203}
   - component: {fileID: 1081367205}
   - component: {fileID: 1081367204}
+  - component: {fileID: 1081367206}
   m_Layer: 0
   m_Name: Parkinglot Edge 3 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49149,7 +49932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081367202}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: 14.666667, y: 0, z: -28.333334}
+  m_LocalPosition: {x: 14.666667, y: -0.0000018577348, z: -28.333334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49206,6 +49989,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081367202}
   m_Mesh: {fileID: 4402984914296120838, guid: 396bf2262eb16ac489f38bc86667b81c, type: 3}
+--- !u!65 &1081367206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081367202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.4999995, y: -2.375, z: -7.499948}
 --- !u!1 &1085810437
 GameObject:
   m_ObjectHideFlags: 0
@@ -49300,9 +50096,10 @@ GameObject:
   - component: {fileID: 1087073814}
   - component: {fileID: 1087073816}
   - component: {fileID: 1087073815}
+  - component: {fileID: 1087073817}
   m_Layer: 0
   m_Name: Highway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49372,6 +50169,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087073813}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &1087073817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087073813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5.0000005}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.500001}
 --- !u!1 &1089879599
 GameObject:
   m_ObjectHideFlags: 0
@@ -49917,9 +50727,10 @@ GameObject:
   - component: {fileID: 1096195830}
   - component: {fileID: 1096195832}
   - component: {fileID: 1096195831}
+  - component: {fileID: 1096195833}
   m_Layer: 0
   m_Name: Freeway Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49989,6 +50800,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096195829}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1096195833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096195829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1098626220
 GameObject:
   m_ObjectHideFlags: 0
@@ -50083,9 +50907,10 @@ GameObject:
   - component: {fileID: 1099767799}
   - component: {fileID: 1099767801}
   - component: {fileID: 1099767800}
+  - component: {fileID: 1099767802}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50155,6 +50980,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099767798}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1099767802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099767798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1100897444
 GameObject:
   m_ObjectHideFlags: 0
@@ -50860,9 +51698,10 @@ GameObject:
   - component: {fileID: 1115363818}
   - component: {fileID: 1115363820}
   - component: {fileID: 1115363819}
+  - component: {fileID: 1115363821}
   m_Layer: 0
   m_Name: Parkinglot Corner 3 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50932,6 +51771,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115363817}
   m_Mesh: {fileID: -927930221983466428, guid: 95959c32634cf8f48b8599dc62aaf302, type: 3}
+--- !u!65 &1115363821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115363817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 5.2500043, z: 15}
+  m_Center: {x: -7.5, y: -2.3749979, z: -7.500122}
 --- !u!1 &1116862752
 GameObject:
   m_ObjectHideFlags: 0
@@ -51026,9 +51878,10 @@ GameObject:
   - component: {fileID: 1122402486}
   - component: {fileID: 1122402488}
   - component: {fileID: 1122402487}
+  - component: {fileID: 1122402489}
   m_Layer: 0
   m_Name: Freeway Straight 1 (12)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51098,6 +51951,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122402485}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1122402489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122402485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1122439438
 GameObject:
   m_ObjectHideFlags: 0
@@ -52749,9 +53615,10 @@ GameObject:
   - component: {fileID: 1150768447}
   - component: {fileID: 1150768449}
   - component: {fileID: 1150768448}
+  - component: {fileID: 1150768450}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52821,6 +53688,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150768446}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1150768450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150768446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1151308503
 GameObject:
   m_ObjectHideFlags: 0
@@ -54483,9 +55363,10 @@ GameObject:
   - component: {fileID: 1194444494}
   - component: {fileID: 1194444496}
   - component: {fileID: 1194444495}
+  - component: {fileID: 1194444497}
   m_Layer: 0
   m_Name: Parkinglot Edge 3 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54498,7 +55379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194444493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.666667, y: 0, z: -13.333334}
+  m_LocalPosition: {x: -14.666667, y: -0.00000087422814, z: -13.333334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54555,6 +55436,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194444493}
   m_Mesh: {fileID: 4402984914296120838, guid: 396bf2262eb16ac489f38bc86667b81c, type: 3}
+--- !u!65 &1194444497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194444493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.50003, y: -2.375, z: -7.50007}
 --- !u!1 &1195016199
 GameObject:
   m_ObjectHideFlags: 0
@@ -54898,9 +55792,10 @@ GameObject:
   - component: {fileID: 1199208851}
   - component: {fileID: 1199208853}
   - component: {fileID: 1199208852}
+  - component: {fileID: 1199208854}
   m_Layer: 0
   m_Name: Freeway Straight 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54970,6 +55865,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199208850}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1199208854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199208850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1203612894
 GameObject:
   m_ObjectHideFlags: 0
@@ -55472,9 +56380,10 @@ GameObject:
   - component: {fileID: 1211937718}
   - component: {fileID: 1211937720}
   - component: {fileID: 1211937719}
+  - component: {fileID: 1211937721}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55544,6 +56453,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211937717}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1211937721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211937717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1212243271
 GameObject:
   m_ObjectHideFlags: 0
@@ -55857,9 +56779,10 @@ GameObject:
   - component: {fileID: 1216159563}
   - component: {fileID: 1216159565}
   - component: {fileID: 1216159564}
+  - component: {fileID: 1216159566}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55929,6 +56852,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216159562}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1216159566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216159562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5000002}
 --- !u!1 &1216920093
 GameObject:
   m_ObjectHideFlags: 0
@@ -56355,9 +57291,10 @@ GameObject:
   - component: {fileID: 1227915836}
   - component: {fileID: 1227915838}
   - component: {fileID: 1227915837}
+  - component: {fileID: 1227915839}
   m_Layer: 0
   m_Name: SingleLane Curve (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56426,6 +57363,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227915835}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1227915839
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227915835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1231006697
 GameObject:
@@ -56604,9 +57555,10 @@ GameObject:
   - component: {fileID: 1234432878}
   - component: {fileID: 1234432880}
   - component: {fileID: 1234432879}
+  - component: {fileID: 1234432881}
   m_Layer: 0
   m_Name: SingleLane Curve (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56675,6 +57627,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234432877}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1234432881
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234432877}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1235187652
 GameObject:
@@ -56847,9 +57813,10 @@ GameObject:
   - component: {fileID: 1238631917}
   - component: {fileID: 1238631919}
   - component: {fileID: 1238631918}
+  - component: {fileID: 1238631920}
   m_Layer: 0
   m_Name: Highway Cross Road (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56919,6 +57886,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238631916}
   m_Mesh: {fileID: -3572634501876546351, guid: 5d4a6e47ccd5b764882b3c8fcfa23fac, type: 3}
+--- !u!65 &1238631920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238631916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000008, y: 3.75, z: 15.00001}
+  m_Center: {x: -12.500002, y: 14.375, z: -7.499999}
 --- !u!1 &1240155827
 GameObject:
   m_ObjectHideFlags: 0
@@ -57786,9 +58766,10 @@ GameObject:
   - component: {fileID: 1263159477}
   - component: {fileID: 1263159479}
   - component: {fileID: 1263159478}
+  - component: {fileID: 1263159480}
   m_Layer: 0
   m_Name: Road Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57858,6 +58839,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263159476}
   m_Mesh: {fileID: -4816615554073495639, guid: a7aeec982ad928449b84e3f07362ebcf, type: 3}
+--- !u!65 &1263159480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263159476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -7.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1267789418
 GameObject:
   m_ObjectHideFlags: 0
@@ -58035,9 +59029,10 @@ GameObject:
   - component: {fileID: 1269890741}
   - component: {fileID: 1269890743}
   - component: {fileID: 1269890742}
+  - component: {fileID: 1269890744}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58107,6 +59102,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269890740}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1269890744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269890740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1269910413
 GameObject:
   m_ObjectHideFlags: 0
@@ -58118,9 +59126,10 @@ GameObject:
   - component: {fileID: 1269910414}
   - component: {fileID: 1269910416}
   - component: {fileID: 1269910415}
+  - component: {fileID: 1269910417}
   m_Layer: 0
   m_Name: SingleLane Curve (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58189,6 +59198,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269910413}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1269910417
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269910413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1270169918
 GameObject:
@@ -58464,9 +59487,10 @@ GameObject:
   - component: {fileID: 1271602003}
   - component: {fileID: 1271602005}
   - component: {fileID: 1271602004}
+  - component: {fileID: 1271602006}
   m_Layer: 0
   m_Name: SingleLane Curve (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58535,6 +59559,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271602002}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1271602006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271602002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1276913791
 GameObject:
@@ -58866,9 +59904,10 @@ GameObject:
   - component: {fileID: 1283111274}
   - component: {fileID: 1283111276}
   - component: {fileID: 1283111275}
+  - component: {fileID: 1283111277}
   m_Layer: 0
   m_Name: Freeway Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58938,6 +59977,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283111273}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1283111277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283111273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1287274301
 GameObject:
   m_ObjectHideFlags: 0
@@ -59032,9 +60084,10 @@ GameObject:
   - component: {fileID: 1288070084}
   - component: {fileID: 1288070086}
   - component: {fileID: 1288070085}
+  - component: {fileID: 1288070087}
   m_Layer: 0
   m_Name: SingleLane Curve (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59103,6 +60156,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288070083}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1288070087
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288070083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1290011682
 GameObject:
@@ -59617,9 +60684,10 @@ GameObject:
   - component: {fileID: 1296932834}
   - component: {fileID: 1296932836}
   - component: {fileID: 1296932835}
+  - component: {fileID: 1296932837}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59689,6 +60757,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296932833}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1296932837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296932833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5000002}
 --- !u!1 &1299268749
 GameObject:
   m_ObjectHideFlags: 0
@@ -60434,9 +61515,10 @@ GameObject:
   - component: {fileID: 1325214850}
   - component: {fileID: 1325214852}
   - component: {fileID: 1325214851}
+  - component: {fileID: 1325214853}
   m_Layer: 0
   m_Name: SingleLane Curve (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60505,6 +61587,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325214849}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1325214853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325214849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1327549370
 GameObject:
@@ -61208,9 +62304,10 @@ GameObject:
   - component: {fileID: 1354688316}
   - component: {fileID: 1354688318}
   - component: {fileID: 1354688317}
+  - component: {fileID: 1354688319}
   m_Layer: 0
   m_Name: Freeway Straight 1 (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61280,6 +62377,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354688315}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1354688319
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354688315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.0000005}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000002}
 --- !u!1 &1355814993
 GameObject:
   m_ObjectHideFlags: 0
@@ -63032,9 +64142,10 @@ GameObject:
   - component: {fileID: 1392592583}
   - component: {fileID: 1392592585}
   - component: {fileID: 1392592584}
+  - component: {fileID: 1392592586}
   m_Layer: 0
   m_Name: Freeway Straight 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63104,6 +64215,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392592582}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1392592586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392592582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.0000005}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000002}
 --- !u!1 &1393377910
 GameObject:
   m_ObjectHideFlags: 0
@@ -63531,9 +64655,10 @@ GameObject:
   - component: {fileID: 1400063014}
   - component: {fileID: 1400063016}
   - component: {fileID: 1400063015}
+  - component: {fileID: 1400063017}
   m_Layer: 0
   m_Name: SingleLane Curve (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63602,6 +64727,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400063013}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1400063017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400063013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1404938928
 GameObject:
@@ -64032,9 +65171,10 @@ GameObject:
   - component: {fileID: 1406535599}
   - component: {fileID: 1406535601}
   - component: {fileID: 1406535600}
+  - component: {fileID: 1406535602}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64104,6 +65244,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406535598}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1406535602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406535598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1408950796
 GameObject:
   m_ObjectHideFlags: 0
@@ -64611,9 +65764,10 @@ GameObject:
   - component: {fileID: 1415948345}
   - component: {fileID: 1415948347}
   - component: {fileID: 1415948346}
+  - component: {fileID: 1415948348}
   m_Layer: 0
   m_Name: Freeway Straight 1 (9)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64683,6 +65837,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415948344}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1415948348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415948344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1417017467
 GameObject:
   m_ObjectHideFlags: 0
@@ -66013,9 +67180,10 @@ GameObject:
   - component: {fileID: 1442460925}
   - component: {fileID: 1442460927}
   - component: {fileID: 1442460926}
+  - component: {fileID: 1442460928}
   m_Layer: 0
   m_Name: Parkinglot Center 2 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66028,7 +67196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442460924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.333334}
+  m_LocalPosition: {x: 0, y: -0.00000087422814, z: -13.333334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66085,6 +67253,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442460924}
   m_Mesh: {fileID: -6363909310983034838, guid: acbcde60833f14e4aa03b304a94489e4, type: 3}
+--- !u!65 &1442460928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442460924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000002, y: 0.000000655671, z: 15.000002}
+  m_Center: {x: -7.499999, y: -0.0000003278355, z: -7.5000696}
 --- !u!1 &1442723254
 GameObject:
   m_ObjectHideFlags: 0
@@ -66303,9 +67484,10 @@ GameObject:
   - component: {fileID: 1445302595}
   - component: {fileID: 1445302597}
   - component: {fileID: 1445302596}
+  - component: {fileID: 1445302598}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66375,6 +67557,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445302594}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &1445302598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445302594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &1445555088
 GameObject:
   m_ObjectHideFlags: 0
@@ -67324,9 +68519,10 @@ GameObject:
   - component: {fileID: 1466308489}
   - component: {fileID: 1466308491}
   - component: {fileID: 1466308490}
+  - component: {fileID: 1466308492}
   m_Layer: 0
   m_Name: SingleLane Curve (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67395,6 +68591,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466308488}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1466308492
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466308488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1466768946
 GameObject:
@@ -67490,9 +68700,10 @@ GameObject:
   - component: {fileID: 1468144613}
   - component: {fileID: 1468144615}
   - component: {fileID: 1468144614}
+  - component: {fileID: 1468144616}
   m_Layer: 0
   m_Name: SingleLane Curve (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67561,6 +68772,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468144612}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1468144616
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468144612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1473136231
 GameObject:
@@ -70652,9 +71877,10 @@ GameObject:
   - component: {fileID: 1542317513}
   - component: {fileID: 1542317515}
   - component: {fileID: 1542317514}
+  - component: {fileID: 1542317516}
   m_Layer: 0
   m_Name: Parkinglot Edge 4 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70666,9 +71892,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542317512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.1, y: -0, z: -41.2}
-  m_LocalScale: {x: 0.96764004, y: 1, z: 0.6666667}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.100018, y: -0.000002701367, z: -41.200035}
+  m_LocalScale: {x: 0.9676401, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5758019525167858010}
@@ -70724,6 +71950,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542317512}
   m_Mesh: {fileID: -6262798135204833816, guid: c08fc38495d0bd64786b541175e0ca7a, type: 3}
+--- !u!65 &1542317516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542317512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000008, y: 5.2500033, z: 15.000002}
+  m_Center: {x: -7.499998, y: -2.3750021, z: -7.5001307}
 --- !u!1 &1542486067
 GameObject:
   m_ObjectHideFlags: 0
@@ -73706,9 +74945,10 @@ GameObject:
   - component: {fileID: 1614884071}
   - component: {fileID: 1614884073}
   - component: {fileID: 1614884072}
+  - component: {fileID: 1614884074}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73778,6 +75018,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614884070}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1614884074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614884070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1615069867
 GameObject:
   m_ObjectHideFlags: 0
@@ -73955,9 +75208,10 @@ GameObject:
   - component: {fileID: 1616205660}
   - component: {fileID: 1616205662}
   - component: {fileID: 1616205661}
+  - component: {fileID: 1616205663}
   m_Layer: 0
   m_Name: Freeway Cross Freeway
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74027,6 +75281,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616205659}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &1616205663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616205659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &1622715227
 GameObject:
   m_ObjectHideFlags: 0
@@ -74545,9 +75812,10 @@ GameObject:
   - component: {fileID: 1634381946}
   - component: {fileID: 1634381948}
   - component: {fileID: 1634381947}
+  - component: {fileID: 1634381949}
   m_Layer: 0
   m_Name: Freeway Straight 1 (10)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74617,6 +75885,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634381945}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1634381949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634381945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!1 &1636229268
 GameObject:
   m_ObjectHideFlags: 0
@@ -74712,9 +75993,10 @@ GameObject:
   - component: {fileID: 1636982702}
   - component: {fileID: 1636982704}
   - component: {fileID: 1636982703}
+  - component: {fileID: 1636982705}
   m_Layer: 0
   m_Name: Parkinglot Center 2 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74784,6 +76066,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636982701}
   m_Mesh: {fileID: -6363909310983034838, guid: acbcde60833f14e4aa03b304a94489e4, type: 3}
+--- !u!65 &1636982705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636982701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000002, y: 0.000000655671, z: 15.000002}
+  m_Center: {x: -7.499999, y: -0.0000003278355, z: -7.5000086}
 --- !u!1 &1637373059
 GameObject:
   m_ObjectHideFlags: 0
@@ -75606,9 +76901,10 @@ GameObject:
   - component: {fileID: 1679719731}
   - component: {fileID: 1679719733}
   - component: {fileID: 1679719732}
+  - component: {fileID: 1679719734}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75678,6 +76974,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679719730}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1679719734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679719730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5000002}
 --- !u!1 &1679814127
 GameObject:
   m_ObjectHideFlags: 0
@@ -76262,9 +77571,10 @@ GameObject:
   - component: {fileID: 1691346817}
   - component: {fileID: 1691346819}
   - component: {fileID: 1691346818}
+  - component: {fileID: 1691346820}
   m_Layer: 0
   m_Name: Freeway Cross Freeway (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76334,6 +77644,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691346816}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &1691346820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691346816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &1692630061
 GameObject:
   m_ObjectHideFlags: 0
@@ -76345,9 +77668,10 @@ GameObject:
   - component: {fileID: 1692630062}
   - component: {fileID: 1692630064}
   - component: {fileID: 1692630063}
+  - component: {fileID: 1692630065}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2 (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76418,6 +77742,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692630061}
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!64 &1692630065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692630061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
 --- !u!1 &1694178695
 GameObject:
   m_ObjectHideFlags: 0
@@ -76429,9 +77767,10 @@ GameObject:
   - component: {fileID: 1694178696}
   - component: {fileID: 1694178698}
   - component: {fileID: 1694178697}
+  - component: {fileID: 1694178699}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76502,6 +77841,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694178695}
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!65 &1694178699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694178695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 70.000015, y: 13.827429, z: 125.000015}
+  m_Center: {x: -35.000008, y: 1.9137096, z: -62.500023}
 --- !u!1 &1697244062
 GameObject:
   m_ObjectHideFlags: 0
@@ -78441,9 +79793,10 @@ GameObject:
   - component: {fileID: 1745702574}
   - component: {fileID: 1745702576}
   - component: {fileID: 1745702575}
+  - component: {fileID: 1745702577}
   m_Layer: 0
   m_Name: Freeway Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78513,6 +79866,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745702573}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1745702577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745702573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1746434949
 GameObject:
   m_ObjectHideFlags: 0
@@ -79746,9 +81112,10 @@ GameObject:
   - component: {fileID: 1788449318}
   - component: {fileID: 1788449320}
   - component: {fileID: 1788449319}
+  - component: {fileID: 1788449321}
   m_Layer: 0
   m_Name: SingleLane Curve (7)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79817,6 +81184,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788449317}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1788449321
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788449317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1789036747
 GameObject:
@@ -79995,9 +81376,10 @@ GameObject:
   - component: {fileID: 1795191492}
   - component: {fileID: 1795191494}
   - component: {fileID: 1795191493}
+  - component: {fileID: 1795191495}
   m_Layer: 0
   m_Name: Freeway Straight 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80067,6 +81449,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795191491}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1795191495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795191491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1798436820
 GameObject:
   m_ObjectHideFlags: 0
@@ -81328,9 +82723,10 @@ GameObject:
   - component: {fileID: 1834051467}
   - component: {fileID: 1834051469}
   - component: {fileID: 1834051468}
+  - component: {fileID: 1834051470}
   m_Layer: 0
   m_Name: Freeway Straight 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81400,6 +82796,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834051466}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &1834051470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834051466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 5.25, z: 5.000001}
+  m_Center: {x: -12.500003, y: -2.375, z: -2.5000005}
 --- !u!1 &1838262664
 GameObject:
   m_ObjectHideFlags: 0
@@ -83237,9 +84646,10 @@ GameObject:
   - component: {fileID: 1875246290}
   - component: {fileID: 1875246292}
   - component: {fileID: 1875246291}
+  - component: {fileID: 1875246293}
   m_Layer: 0
   m_Name: Parkinglot Edge 3 (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83252,7 +84662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875246289}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: 14.666667, y: 0, z: -41.666668}
+  m_LocalPosition: {x: 14.666667, y: -0.000002731963, z: -41.666668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83309,6 +84719,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875246289}
   m_Mesh: {fileID: 4402984914296120838, guid: 396bf2262eb16ac489f38bc86667b81c, type: 3}
+--- !u!65 &1875246293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875246289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.4999995, y: -2.375, z: -7.499948}
 --- !u!1 &1877977136
 GameObject:
   m_ObjectHideFlags: 0
@@ -83700,9 +85123,10 @@ GameObject:
   - component: {fileID: 1883811411}
   - component: {fileID: 1883811413}
   - component: {fileID: 1883811412}
+  - component: {fileID: 1883811414}
   m_Layer: 0
   m_Name: Freeway Curve 1 (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83772,6 +85196,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883811410}
+  m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
+--- !u!64 &1883811414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883811410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
 --- !u!1 &1886806072
 GameObject:
@@ -85196,9 +86634,10 @@ GameObject:
   - component: {fileID: 1929829470}
   - component: {fileID: 1929829472}
   - component: {fileID: 1929829471}
+  - component: {fileID: 1929829473}
   m_Layer: 0
   m_Name: SingleLane Curve (6)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85267,6 +86706,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929829469}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &1929829473
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929829469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &1940712092
 GameObject:
@@ -86001,9 +87454,10 @@ GameObject:
   - component: {fileID: 1972275833}
   - component: {fileID: 1972275835}
   - component: {fileID: 1972275834}
+  - component: {fileID: 1972275836}
   m_Layer: 0
   m_Name: Highway Straight 1 (9)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86073,6 +87527,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972275832}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &1972275836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972275832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.5000005}
 --- !u!1 &1973419273
 GameObject:
   m_ObjectHideFlags: 0
@@ -88804,9 +90271,10 @@ GameObject:
   - component: {fileID: 2037969319}
   - component: {fileID: 2037969321}
   - component: {fileID: 2037969320}
+  - component: {fileID: 2037969322}
   m_Layer: 0
   m_Name: SingleLane Curve (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88875,6 +90343,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037969318}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &2037969322
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037969318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &2041998079
 GameObject:
@@ -90132,9 +91614,10 @@ GameObject:
   - component: {fileID: 2080563481}
   - component: {fileID: 2080563483}
   - component: {fileID: 2080563482}
+  - component: {fileID: 2080563484}
   m_Layer: 0
   m_Name: SingleLane Curve (5)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90203,6 +91686,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080563480}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &2080563484
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080563480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &2084016297
 GameObject:
@@ -91973,9 +93470,10 @@ GameObject:
   - component: {fileID: 2125238297}
   - component: {fileID: 2125238299}
   - component: {fileID: 2125238298}
+  - component: {fileID: 2125238300}
   m_Layer: 0
   m_Name: SingleLane Curve (4)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92044,6 +93542,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125238296}
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
+--- !u!64 &2125238300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125238296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &2125314438
 GameObject:
@@ -93867,9 +95379,10 @@ GameObject:
   - component: {fileID: 515735141202387186}
   - component: {fileID: 3496932916032892759}
   - component: {fileID: 1685312440601025437}
+  - component: {fileID: 3496932916032892760}
   m_Layer: 0
   m_Name: Freeway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94091,9 +95604,10 @@ GameObject:
   - component: {fileID: 486148823075894546}
   - component: {fileID: 3535605336254102199}
   - component: {fileID: 1653956978201218685}
+  - component: {fileID: 3535605336254102200}
   m_Layer: 0
   m_Name: Freeway Join Freeway 2
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95497,9 +97011,10 @@ GameObject:
   - component: {fileID: 1709028465145133243}
   - component: {fileID: 2312716884623931166}
   - component: {fileID: 575506965629649876}
+  - component: {fileID: 2312716884623931167}
   m_Layer: 0
   m_Name: Freeway Cross Freeway
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95708,6 +97223,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088650949935620609}
   m_Mesh: {fileID: 7595813309412612747, guid: 70e1c58c5d5dacb4e84b2f626fffb7c0, type: 3}
+--- !u!65 &2312716884623931167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088650949935620609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000002, y: 0.2500008, z: 25}
+  m_Center: {x: 12.499999, y: 0.12499931, z: -12.499998}
 --- !u!1 &2315757756487454355
 GameObject:
   m_ObjectHideFlags: 0
@@ -96270,9 +97798,10 @@ GameObject:
   - component: {fileID: 3267469942670583855}
   - component: {fileID: 1943225227994097546}
   - component: {fileID: 4400947321064035136}
+  - component: {fileID: 4400947321064035137}
   m_Layer: 0
   m_Name: Road Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96987,9 +98516,10 @@ GameObject:
   - component: {fileID: 2668026810752121457}
   - component: {fileID: 1344719947415565780}
   - component: {fileID: 3840885362084200734}
+  - component: {fileID: 3840885362084200735}
   m_Layer: 0
   m_Name: Freeway Curve 1 (1)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97154,7 +98684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4286982060519643092}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: 18.816692, y: 0, z: -0.14664714}
+  m_LocalPosition: {x: 18.816692, y: -0.000000009615229, z: -0.14664714}
   m_LocalScale: {x: 0.6666667, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97169,6 +98699,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892718558088116808}
   m_Mesh: {fileID: 7396541056596634119, guid: b1688bda2d53b8a47a323cdb7b754da3, type: 3}
+--- !u!65 &3496932916032892760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892718558088116808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 5.25, z: 5}
+  m_Center: {x: -12.5, y: -2.375, z: -2.5}
 --- !u!4 &3497309723389204115
 Transform:
   m_ObjectHideFlags: 0
@@ -97238,6 +98781,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005698460912578472}
+  m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
+--- !u!64 &3535605336254102200
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005698460912578472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6293604749561156764, guid: 87df3eeab9ec7454c86c133c63b9290a, type: 3}
 --- !u!4 &3539485239902093813
 Transform:
@@ -97588,6 +99145,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3840885362084200735
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336442278518022347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
 --- !u!23 &3850093454967292406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98110,13 +99681,27 @@ GameObject:
   - component: {fileID: 3473889210569493870}
   - component: {fileID: 547856139769971403}
   - component: {fileID: 2341474918187759105}
+  - component: {fileID: 4286982060519643093}
   m_Layer: 0
   m_Name: Parkinglot Corner 3
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4286982060519643093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286982060519643092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 5.2500043, z: 15}
+  m_Center: {x: -7.5, y: -2.3749979, z: -7.499878}
 --- !u!4 &4288253185750406065
 Transform:
   m_ObjectHideFlags: 0
@@ -98205,6 +99790,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4400947321064035137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743732539869180565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.25, z: 5.000002}
+  m_Center: {x: -7.500003, y: -2.375, z: -2.500001}
 --- !u!4 &4412626781576485603
 Transform:
   m_ObjectHideFlags: 0
@@ -98963,9 +100561,10 @@ GameObject:
   - component: {fileID: 5217691591313644033}
   - component: {fileID: 9207377779732370852}
   - component: {fileID: 6351159624125981038}
+  - component: {fileID: 9207377779732370853}
   m_Layer: 0
   m_Name: Parkinglot Edge 4
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99309,7 +100908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4837752717495140539}
   m_LocalRotation: {x: -0, y: 1, z: -0.000000021855703, w: 0}
-  m_LocalPosition: {x: 9.388876, y: 0, z: -0.13330078}
+  m_LocalPosition: {x: 9.388876, y: -0.000000008740147, z: -0.13330078}
   m_LocalScale: {x: 0.6666667, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99731,9 +101330,10 @@ GameObject:
   - component: {fileID: 4623436221439099104}
   - component: {fileID: 8612682568766213957}
   - component: {fileID: 5792353028821662607}
+  - component: {fileID: 8612682568766213958}
   m_Layer: 0
   m_Name: Highway Straight 1
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100500,9 +102100,10 @@ GameObject:
   - component: {fileID: 6905026125627911923}
   - component: {fileID: 7528979779007603030}
   - component: {fileID: 5735536924866123164}
+  - component: {fileID: 7528979779007603031}
   m_Layer: 0
   m_Name: Freeway Curve 1 (3)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101419,9 +103020,10 @@ GameObject:
   - component: {fileID: 6054182271730610712}
   - component: {fileID: 7181866081327742397}
   - component: {fileID: 4922410683219806583}
+  - component: {fileID: 7181866081327742398}
   m_Layer: 0
   m_Name: Freeway Curve 1 (2)
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101812,9 +103414,10 @@ GameObject:
   - component: {fileID: 7593910966778828321}
   - component: {fileID: 6831158401280809348}
   - component: {fileID: 8730739247517297998}
+  - component: {fileID: 8730739247517297999}
   m_Layer: 0
   m_Name: Parkinglot Edge 3
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102082,6 +103685,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6867732281399191714}
+  m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
+--- !u!64 &7181866081327742398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6867732281399191714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
 --- !u!33 &7184036394599751255
 MeshFilter:
@@ -102604,6 +104221,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6095696870429406281}
+  m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
+--- !u!64 &7528979779007603031
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095696870429406281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3357422851674006463, guid: 7dcf79ba2410cba439212afd1144a548, type: 3}
 --- !u!4 &7532498874702082777
 Transform:
@@ -103150,9 +104781,10 @@ GameObject:
   - component: {fileID: 7441914666450140946}
   - component: {fileID: 5830233388657193143}
   - component: {fileID: 8578742840888673405}
+  - component: {fileID: 8578742840888673406}
   m_Layer: 0
   m_Name: Highway Join Road
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103557,9 +105189,10 @@ GameObject:
   - component: {fileID: 8885126340158431209}
   - component: {fileID: 5539872577579847756}
   - component: {fileID: 7711679373069509766}
+  - component: {fileID: 8885126340158431210}
   m_Layer: 0
   m_Name: Parkinglot Center 3
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103839,9 +105472,10 @@ GameObject:
   - component: {fileID: 8671289325972443052}
   - component: {fileID: 5762707731579813897}
   - component: {fileID: 7502354244845352131}
+  - component: {fileID: 8671289325972443053}
   m_Layer: 0
   m_Name: SingleLane Curve
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104089,9 +105723,10 @@ GameObject:
   - component: {fileID: 9109270165121274045}
   - component: {fileID: 5315790615430111000}
   - component: {fileID: 7935778153757273042}
+  - component: {fileID: 9109270165121274046}
   m_Layer: 0
   m_Name: Highway Cross Road
-  m_TagString: Untagged
+  m_TagString: Asphalt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104376,6 +106011,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8578742840888673406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785929192481744296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000008, y: 11.4729, z: 15.000011}
+  m_Center: {x: -12.500002, y: 18.23645, z: -7.5000076}
 --- !u!1 &8596856345806734029
 GameObject:
   m_ObjectHideFlags: 0
@@ -104400,6 +106048,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5432025131905784410}
   m_Mesh: {fileID: -1441408932258056853, guid: b31df86810e85c043a8e81e6de642dc3, type: 3}
+--- !u!65 &8612682568766213958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5432025131905784410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000006, y: 3.75, z: 5.0000005}
+  m_Center: {x: -12.500003, y: 14.375, z: -2.500001}
 --- !u!1 &8641790460060629698
 GameObject:
   m_ObjectHideFlags: 0
@@ -104449,6 +106110,20 @@ Transform:
   m_Father: {fileID: 5758019525167858010}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8671289325972443053
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294868687509853462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2780174666243524506, guid: b01783a9848e5be4b8b8e884326c4539, type: 3}
 --- !u!1 &8693030298773829088
 GameObject:
   m_ObjectHideFlags: 0
@@ -104565,6 +106240,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8730739247517297999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073234608631565467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000001, y: 5.25, z: 15.000001}
+  m_Center: {x: -7.50003, y: -2.375, z: -7.500009}
 --- !u!1 &8731550957256695320
 GameObject:
   m_ObjectHideFlags: 0
@@ -105049,13 +106737,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8072033795222291795}
   m_LocalRotation: {x: -3.5527137e-15, y: -3.921435e-10, z: 0.00000011501001, w: 1}
-  m_LocalPosition: {x: 12.342978, y: 0, z: -40.265625}
+  m_LocalPosition: {x: 12.342978, y: -0.0000026401005, z: -40.265625}
   m_LocalScale: {x: 1.7585334, y: 1, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5758019525167858010}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8885126340158431210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072033795222291795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.999994, y: 0.000004094208, z: 15.000004}
+  m_Center: {x: -7.500002, y: 0.000001421236, z: -7.5001297}
 --- !u!23 &8903472674888205209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -105363,6 +107064,19 @@ Transform:
   m_Father: {fileID: 1863325298}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &9109270165121274046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440150731497818631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000008, y: 3.75, z: 15.00001}
+  m_Center: {x: -12.500002, y: 14.375, z: -7.499999}
 --- !u!33 &9148238309784177512
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -105414,3 +107128,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4837752717495140539}
   m_Mesh: {fileID: -6262798135204833816, guid: c08fc38495d0bd64786b541175e0ca7a, type: 3}
+--- !u!65 &9207377779732370853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4837752717495140539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.000006, y: 5.2500033, z: 15.000002}
+  m_Center: {x: -7.499997, y: -2.3750021, z: -7.4998865}
