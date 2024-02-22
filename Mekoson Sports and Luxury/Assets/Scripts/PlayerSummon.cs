@@ -24,9 +24,11 @@ public class PlayerSummon : MonoBehaviour
     public GameObject lapTextImage;
     public TextMeshProUGUI lapText;
     public int carToDriveIndex;
+    public int canSummon;
     // Start is called before the first frame update
     void Start()
     {
+        canSummon = 1;
         carToDriveIndex = 0;
         inCar = 0;
         canDrive = 0;
@@ -45,10 +47,14 @@ public class PlayerSummon : MonoBehaviour
         if (transform.childCount > carToDriveIndex)
         {
             carToDrive = transform.GetChild(carToDriveIndex);
+            canSummon = 1;
             //carTransform = transform.GetChild(3);
         }
+        else{
+            canSummon = 0;
+        }
 
-        if (Input.GetKeyDown(KeyCode.Q)){
+        if (Input.GetKeyDown(KeyCode.Q) && canSummon == 1 && player.GetComponent<playerMove>().KeyLock == 0){
                 if(CarSummoned == 0){
                     carToDrive.gameObject.SetActive(true);
                     refPosition = refrencePos.transform.position + refrencePos.transform.forward * 5;
@@ -68,27 +74,27 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha1) && CarSummoned == 0){
-            if (transform.GetChild(0).gameObject.tag == "Driveable"){
+            if (transform.childCount > 0){
                 carToDriveIndex = 0;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha2) && CarSummoned == 0){
-            if (transform.GetChild(1).gameObject.tag == "Driveable"){
+            if (transform.childCount > 1){
                 carToDriveIndex = 1;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha3) && CarSummoned == 0){
-            if (transform.GetChild(2).gameObject.tag == "Driveable"){
+            if (transform.childCount > 2){
                 carToDriveIndex = 2;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha4) && CarSummoned == 0){
-            if (transform.GetChild(3).gameObject.tag == "Driveable"){
+            if (transform.childCount > 3){
                 carToDriveIndex = 3;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha5) && CarSummoned == 0){
-            if (transform.GetChild(4).gameObject.tag == "Driveable"){
+            if (transform.childCount > 4){
                 carToDriveIndex = 4;
             }
         }

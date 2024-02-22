@@ -10,13 +10,16 @@ public class InvSlot : MonoBehaviour, IDropHandler
     public int parentIndex1;
     public int parentIndex2;
     public void OnDrop(PointerEventData eventData){
+    GameObject dropped = eventData.pointerDrag;
+    if(dropped.GetComponent<dragableItem>().image.sprite != null){
         if(transform.childCount == 0){
-            GameObject dropped = eventData.pointerDrag;
+            dropped = eventData.pointerDrag;
             dragableItem dragItem = dropped.GetComponent<dragableItem>();
             dragItem.parentAfterDrag = transform;
         }
         else{
-            GameObject dropped = eventData.pointerDrag;
+            if(transform.GetChild(0).gameObject.GetComponent<dragableItem>().image.sprite != null){
+            dropped = eventData.pointerDrag;
             dragableItem dragItem = dropped.GetComponent<dragableItem>();
             transform.GetChild(0).SetParent(dragItem.parentBeforeDrag);
             dragItem.parentAfterDrag = transform;
@@ -77,6 +80,8 @@ public class InvSlot : MonoBehaviour, IDropHandler
                     }
                 }
             }
+            }
         }
+    }
     }
 }
