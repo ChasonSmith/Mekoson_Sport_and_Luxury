@@ -16,8 +16,11 @@ public class playerMove : MonoBehaviour
     public PlayerSummon carGot;
     //Rigidbody carUseRB;
     // Start is called before the first frame update
+    public int KeyLock;
+    public int byGarage;
     void Start()
     {
+        KeyLock = 0;
         CarSummoned = 0;
         rb = GetComponent<Rigidbody>();
         if (transform.childCount > 0)
@@ -40,7 +43,7 @@ public class playerMove : MonoBehaviour
         // if (Input.GetKeyDown("space")){
         //     rb.velocity = new Vector3(rb.velocity.x,5,rb.velocity.z);
         // }
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)){
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) && KeyLock == 0){
             Vector3 forwardDirection = transform.forward;
             transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
             Vector3 rightDirection = transform.right;
@@ -50,7 +53,7 @@ public class playerMove : MonoBehaviour
             // Apply the interpolated rotation to the child transform
             childTransform.rotation = targetRotation;
         }
-        else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)){
+        else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) && KeyLock == 0){
             Vector3 forwardDirection = transform.forward;
             transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
             Vector3 leftDirection = -transform.right;
@@ -60,7 +63,7 @@ public class playerMove : MonoBehaviour
             // Apply the interpolated rotation to the child transform
             childTransform.rotation = targetRotation;
         }
-        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)){
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) && KeyLock == 0){
             Vector3 backwardDirection = -transform.forward;
             transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
             Vector3 leftDirection = -transform.right;
@@ -70,7 +73,7 @@ public class playerMove : MonoBehaviour
             // Apply the interpolated rotation to the child transform
             childTransform.rotation = targetRotation;
         }
-        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)){
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && KeyLock == 0){
             Vector3 backwardDirection = -transform.forward;
             transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
             Vector3 rightDirection = transform.right;
@@ -81,7 +84,7 @@ public class playerMove : MonoBehaviour
             childTransform.rotation = targetRotation;
         }
         else{
-            if (Input.GetKey(KeyCode.W)){
+            if (Input.GetKey(KeyCode.W) && KeyLock == 0){
                 Vector3 forwardDirection = transform.forward;
                 transform.Translate(forwardDirection * moveSpeed * Time.deltaTime, Space.World);
 
@@ -90,7 +93,7 @@ public class playerMove : MonoBehaviour
                     childTransform.rotation = Quaternion.LookRotation(forwardDirection);
                 }
             }
-            if (Input.GetKey(KeyCode.D)){
+            if (Input.GetKey(KeyCode.D) && KeyLock == 0){
                 Vector3 rightDirection = transform.right;
                 transform.Translate(rightDirection * moveSpeed * Time.deltaTime, Space.World);
 
@@ -99,7 +102,7 @@ public class playerMove : MonoBehaviour
                     childTransform.rotation = Quaternion.LookRotation(rightDirection);
                 }
             }
-            if (Input.GetKey(KeyCode.S)){
+            if (Input.GetKey(KeyCode.S) && KeyLock == 0){
                 Vector3 backwardDirection = -transform.forward; // Get the backward direction relative to the character's current orientation
                 transform.Translate(backwardDirection * moveSpeed * Time.deltaTime, Space.World);
 
@@ -108,7 +111,7 @@ public class playerMove : MonoBehaviour
                     childTransform.rotation = Quaternion.LookRotation(backwardDirection);
                 }
             }
-            if (Input.GetKey(KeyCode.A)){
+            if (Input.GetKey(KeyCode.A) && KeyLock == 0){
                 Vector3 leftDirection = -transform.right;
                 transform.Translate(leftDirection * moveSpeed * Time.deltaTime, Space.World);
 
@@ -118,13 +121,13 @@ public class playerMove : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKey("left")){
+        if (Input.GetKey("left") && KeyLock == 0){
             //rb.velocity = new Vector3(-5,rb.velocity.y,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
             childTransform.Rotate(Vector3.up, rotationAmount);
             transform.Rotate(Vector3.up, -rotationAmount);
         }
-        if (Input.GetKey("right")){
+        if (Input.GetKey("right") && KeyLock == 0){
             //rb.velocity = new Vector3(5,0,rb.velocity.z);
             rotationAmount = rotationSpeed * Time.deltaTime;
             childTransform.Rotate(Vector3.up, -rotationAmount);
@@ -142,6 +145,10 @@ public class playerMove : MonoBehaviour
                 
 
         }
+
+        if (Input.GetKeyDown(KeyCode.G) && byGarage == 1 && KeyLock == 0){
+            KeyLock = 1;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -154,6 +161,11 @@ public class playerMove : MonoBehaviour
                 // Add your code here to handle the trigger entering event
             }
         }
+        if (other.CompareTag("Garage") && CarSummoned == 0) // Example: Checking if the triggering object has the "Player" tag
+        {
+            byGarage = 1;
+            carGot.garageText.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -164,6 +176,11 @@ public class playerMove : MonoBehaviour
                 carGot.CarOutRangeDrive();
                 // Add your code here to handle the trigger entering event
             }
+        }
+        if (other.CompareTag("Garage") && CarSummoned == 0) // Example: Checking if the triggering object has the "Player" tag
+        {
+            byGarage = 0;
+            carGot.garageText.SetActive(false);
         }
     }   
 }

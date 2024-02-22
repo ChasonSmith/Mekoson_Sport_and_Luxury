@@ -355,6 +355,11 @@ public class CarMovement : MonoBehaviour
         {
             onMud = 0;
         }
+        if (other.CompareTag("Garage")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            CarParent.gameObject.GetComponent<PlayerSummon>().garageText.SetActive(false);
+            CarParent.gameObject.GetComponent<PlayerSummon>().player.GetComponent<playerMove>().byGarage = 0;
+        }
     }  
 
     void OnTriggerStay(Collider other)
