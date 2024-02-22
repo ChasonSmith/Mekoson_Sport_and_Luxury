@@ -1206,7 +1206,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 988152862817504522}
-  - {fileID: 5659562571289312679}
   m_Father: {fileID: 1924430938995843867}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1662,6 +1661,7 @@ Transform:
   m_Children:
   - {fileID: 1485888307605937097}
   - {fileID: 1924430938995843867}
+  - {fileID: 5659562571289312679}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1728,6 +1728,7 @@ MonoBehaviour:
   onMud: 0
   onDesert: 0
   currMult: 0
+  CarID: 2
 --- !u!114 &5821425912321542324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3206,7 +3207,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3865,8 +3866,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9158054584236527482}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3874,8 +3875,8 @@ Transform:
   - {fileID: 1014032765587756246}
   - {fileID: 7054113220233361781}
   - {fileID: 6337805947844169489}
-  m_Father: {fileID: 1061040251714616023}
-  m_RootOrder: 1
+  m_Father: {fileID: 2652808769387615657}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9172733008695832508
 GameObject:

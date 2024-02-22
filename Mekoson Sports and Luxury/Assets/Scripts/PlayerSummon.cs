@@ -13,6 +13,7 @@ public class PlayerSummon : MonoBehaviour
     Vector3 refPosition;
     public GameObject driveText;
     public GameObject challengeText;
+    public GameObject garageText;
     public int canDrive;
     public int inCar;
     public GameObject player;

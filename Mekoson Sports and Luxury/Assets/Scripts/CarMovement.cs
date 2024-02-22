@@ -82,6 +82,8 @@ public class CarMovement : MonoBehaviour
     public int onMud;
     public int onDesert;
     public float currMult;
+    public int CarID;
+    public Texture2D carImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -354,6 +356,11 @@ public class CarMovement : MonoBehaviour
         if (other.CompareTag("Mud")) // Example: Checking if the triggering object has the "Player" tag
         {
             onMud = 0;
+        }
+        if (other.CompareTag("Garage")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            CarParent.gameObject.GetComponent<PlayerSummon>().player.GetComponent<playerMove>().byGarage = 0;
+            CarParent.gameObject.GetComponent<PlayerSummon>().garageText.SetActive(false);
         }
     }  
 

@@ -12,6 +12,7 @@ TagManager:
   - Snow
   - Grass
   - Mud
+  - Garage
   layers:
   - Default
   - TransparentFX
