@@ -433,7 +433,17 @@ public class CarMovement : MonoBehaviour
 
     void Brake()
     {
-        if (Input.GetKey(KeyCode.Space) || moveInput == 0)
+        if (Input.GetKey(KeyCode.Space))
+        {
+            foreach (var wheel in wheels)
+            {
+                wheel.wheelCollider.brakeTorque = 600 * brakeAcceleration * Time.deltaTime;
+            }
+
+            //carLights.isBackLightOn = true;
+            //carLights.OperateBackLights();
+        }
+        else if (moveInput == 0)
         {
             foreach (var wheel in wheels)
             {

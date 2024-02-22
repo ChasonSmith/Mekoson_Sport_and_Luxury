@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DrivingGame1.0.unity
-    guid: cf4708660f9bcb74d95e20a541dd18f5
-  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/DrivingGame1.0.unity
+    guid: cf4708660f9bcb74d95e20a541dd18f5
   m_configObjects: {}
