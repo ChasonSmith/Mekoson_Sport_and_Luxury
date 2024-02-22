@@ -68,27 +68,27 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha1) && CarSummoned == 0){
-            if (transform.childCount > 0){
+            if (transform.GetChild(0).gameObject.tag == "Driveable"){
                 carToDriveIndex = 0;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha2) && CarSummoned == 0){
-            if (transform.childCount > 1){
+            if (transform.GetChild(1).gameObject.tag == "Driveable"){
                 carToDriveIndex = 1;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha3) && CarSummoned == 0){
-            if (transform.childCount > 2){
+            if (transform.GetChild(2).gameObject.tag == "Driveable"){
                 carToDriveIndex = 2;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha4) && CarSummoned == 0){
-            if (transform.childCount > 3){
+            if (transform.GetChild(3).gameObject.tag == "Driveable"){
                 carToDriveIndex = 3;
             }
         }
         if(Input.GetKeyDown(KeyCode.Alpha5) && CarSummoned == 0){
-            if (transform.childCount > 4){
+            if (transform.GetChild(4).gameObject.tag == "Driveable"){
                 carToDriveIndex = 4;
             }
         }

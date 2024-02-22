@@ -53,8 +53,30 @@ public class Spawner : MonoBehaviour
         }
         if(carIsSpawned == 1){
             if(spawnedCar.GetComponent<ChallengeCar>().carIsChallenged == 1){
-                if(newParentObject1.transform.childCount < 5){
+                if(newParentObject1.transform.GetChild(0).gameObject.tag == "PlaceHolder"){
+                    Destroy(newParentObject1.transform.GetChild(0).gameObject);
                     spawnedCar.transform.SetParent(newParentObject1.transform);
+                    spawnedCar.transform.SetSiblingIndex(0);
+                }
+                else if(newParentObject1.transform.GetChild(1).gameObject.tag == "PlaceHolder"){
+                    Destroy(newParentObject1.transform.GetChild(1).gameObject);
+                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                    spawnedCar.transform.SetSiblingIndex(1);
+                }
+                else if(newParentObject1.transform.GetChild(2).gameObject.tag == "PlaceHolder"){
+                    Destroy(newParentObject1.transform.GetChild(2).gameObject);
+                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                    spawnedCar.transform.SetSiblingIndex(2);
+                }
+                else if(newParentObject1.transform.GetChild(3).gameObject.tag == "PlaceHolder"){
+                    Destroy(newParentObject1.transform.GetChild(3).gameObject);
+                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                    spawnedCar.transform.SetSiblingIndex(3);
+                }
+                else if(newParentObject1.transform.GetChild(4).gameObject.tag == "PlaceHolder"){
+                    Destroy(newParentObject1.transform.GetChild(4).gameObject);
+                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                    spawnedCar.transform.SetSiblingIndex(4);
                 }
                 else{
                     spawnedCar.transform.SetParent(newParentObject2.transform);

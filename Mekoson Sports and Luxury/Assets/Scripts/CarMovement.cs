@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarMovement : MonoBehaviour
 {   
@@ -82,6 +83,7 @@ public class CarMovement : MonoBehaviour
     public int onMud;
     public int onDesert;
     public float currMult;
+    public Image image;
     // Start is called before the first frame update
     void Start()
     {
