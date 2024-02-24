@@ -96,7 +96,7 @@ public class CarMovement : MonoBehaviour
         turnSensitivity = defaultRotate;
         maxAcceleration = defaultSpeed;
         inRace = 0;
-        CarParent = transform.parent;
+        CarParent = transform.parent.parent;
         canChallenge = 0;
         rb = GetComponent<Rigidbody>();
         if (transform.childCount > 1)

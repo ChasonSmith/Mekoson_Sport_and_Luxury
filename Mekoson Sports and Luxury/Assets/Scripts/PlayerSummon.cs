@@ -34,9 +34,9 @@ public class PlayerSummon : MonoBehaviour
         canDrive = 0;
         CarSummoned = 0;
         carChosen = 0;
-        if (transform.childCount > carToDriveIndex)
+        if (transform.GetChild(carToDriveIndex).childCount > 0)
         {
-            carToDrive = transform.GetChild(carToDriveIndex);
+            carToDrive = transform.GetChild(carToDriveIndex).GetChild(0);
             //carTransform = transform.GetChild(3);
         }
     }
@@ -44,9 +44,9 @@ public class PlayerSummon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount > carToDriveIndex)
+        if (transform.GetChild(carToDriveIndex).childCount > 0)
         {
-            carToDrive = transform.GetChild(carToDriveIndex);
+            carToDrive = transform.GetChild(carToDriveIndex).GetChild(0);
             canSummon = 1;
             //carTransform = transform.GetChild(3);
         }
@@ -74,29 +74,19 @@ public class PlayerSummon : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha1) && CarSummoned == 0){
-            if (transform.childCount > 0){
-                carToDriveIndex = 0;
-            }
+            carToDriveIndex = 0;
         }
         if(Input.GetKeyDown(KeyCode.Alpha2) && CarSummoned == 0){
-            if (transform.childCount > 1){
-                carToDriveIndex = 1;
-            }
+            carToDriveIndex = 1;
         }
         if(Input.GetKeyDown(KeyCode.Alpha3) && CarSummoned == 0){
-            if (transform.childCount > 2){
-                carToDriveIndex = 2;
-            }
+            carToDriveIndex = 2;
         }
         if(Input.GetKeyDown(KeyCode.Alpha4) && CarSummoned == 0){
-            if (transform.childCount > 3){
-                carToDriveIndex = 3;
-            }
+            carToDriveIndex = 3;
         }
         if(Input.GetKeyDown(KeyCode.Alpha5) && CarSummoned == 0){
-            if (transform.childCount > 4){
-                carToDriveIndex = 4;
-            }
+            carToDriveIndex = 4;
         }
 
         if(inCar == 1){

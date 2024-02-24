@@ -11,6 +11,8 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     public Transform parentAfterDrag;
     public Transform parentBeforeDrag;
     public Transform carsParents;
+    public int noRoom;
+    public int moveTo;
     //public Transform imageParents;
     public int overObject;
     public playerMove player;
@@ -57,30 +59,32 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         {
             if(image.sprite != null){
                 int invSlot = transform.parent.GetComponent<InvSlot>().InvSlotNum;
+
+
                 if(invSlot > 5){
-                    if(carsParents.GetChild(0).childCount < 5){
-                        carsParents.GetChild(1).GetChild(invSlot - 6).SetParent(carsParents.GetChild(0));
-                        // int whereNew = carsParents.GetChild(0).childCount - 1;
-                        // GameObject otherImage = transform.parent.parent.GetChild(whereNew).GetChild(0).gameObject;
-                        // parentBeforDrag = transfrom.parent;
-                        // transform.SetParent(otherImage.transform.parent);
-                        // otherImage.SetParent(parentBeforeDrag);
-                        // parentBeforeDrag(transform.parent);
-                        // trasnform.position = transform.parent.position;
-                        // otherImage.transform.position = otherImage.transform,parent.position;
+                    noRoom = 1;
+                    for (int i = 0; i < carsParents.GetChild(0).childCount; i++){
+                        if(carsParents.GetChild(0).GetChild(i).childCount == 0){
+                            noRoom = 0;
+                            moveTo = i;
+                            break;
+                        }
+                    }
+                    if(noRoom == 0){
+                        carsParents.GetChild(1).GetChild(invSlot - 6).GetChild(0).SetParent(carsParents.GetChild(0).GetChild(moveTo));
                     }
                 }
                 else{
-                    if(carsParents.GetChild(1).childCount < 25){
-                        carsParents.GetChild(0).GetChild(invSlot - 1).SetParent(carsParents.GetChild(1));
-                        // int whereNew = carsParents.GetChild(1).childCount - 1 + 5;
-                        // GameObject otherImage = transform.parent.parent.GetChild(whereNew).GetChild(0).gameObject;
-                        // parentBeforDrag = transfrom.parent;
-                        // transform.SetParent(otherImage.transform.parent);
-                        // otherImage.SetParent(parentBeforeDrag);
-                        // parentBeforeDrag(transform.parent);
-                        // trasnform.position = transform.parent.position;
-                        // otherImage.transform.position = otherImage.transform,parent.position;
+                    noRoom = 1;
+                    for (int i = 0; i < carsParents.GetChild(1).childCount; i++){
+                        if(carsParents.GetChild(1).GetChild(i).childCount == 0){
+                            noRoom = 0;
+                            moveTo = i;
+                            break;
+                        }
+                    }
+                    if(noRoom == 0){
+                        carsParents.GetChild(0).GetChild(invSlot - 1).GetChild(0).SetParent(carsParents.GetChild(1).GetChild(moveTo));
                     }
                 }
                 player.SetGarageInterface();

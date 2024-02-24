@@ -140,15 +140,19 @@ public class playerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) && KeyLock == 0 && carGot.canSummon == 1){
                 if(CarSummoned == 0){
                     CarSummoned = 1;
+                    carGot.garageText.SetActive(false);
                 }
                 else if(CarSummoned == 1){
                     CarSummoned = 0;
+                    if(byGarage == 1){
+                        carGot.garageText.SetActive(true);
+                    }
                 }
                 
 
         }
 
-        if (Input.GetKeyDown(KeyCode.G) && byGarage == 1 && KeyLock == 0){
+        if (Input.GetKeyDown(KeyCode.G) && byGarage == 1 && KeyLock == 0 && CarSummoned == 0){
             KeyLock = 1;
             carGot.garageText.SetActive(false);
             GarageInterface.SetActive(true);
@@ -190,37 +194,35 @@ public class playerMove : MonoBehaviour
     }  
     public void SetGarageInterface(){
                 for (int i = 0; i < GarageInterface.transform.GetChild(0).childCount; i++){
-                    Transform childTransform = GarageInterface.transform.GetChild(0).GetChild(i);
+                    Transform GarageChild = GarageInterface.transform.GetChild(0).GetChild(i);
                     if(i < 5){
-                        if(carGot.gameObject.transform.childCount > i){
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().sprite = carGot.gameObject.transform.GetChild(i).gameObject.GetComponent<CarMovement>().image.sprite;
-                            Color imageColor = childTransform.GetChild(0).gameObject.GetComponent<Image>().color;
+                        if(carGot.gameObject.transform.GetChild(i).childCount > 0){
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().sprite = carGot.gameObject.transform.GetChild(i).GetChild(0).gameObject.GetComponent<CarMovement>().image.sprite;
+                            Color imageColor = GarageChild.GetChild(0).gameObject.GetComponent<Image>().color;
                             imageColor.a = 1f;
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
-                            //Debug.Log("Ran");
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
                         }
                         else{
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().sprite = null;
-                            Color imageColor = childTransform.GetChild(0).gameObject.GetComponent<Image>().color;
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().sprite = null;
+                            Color imageColor = GarageChild.GetChild(0).gameObject.GetComponent<Image>().color;
                             imageColor.a = 0f;
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
                         }
                     }
                     else{
-                        if(carGot.gameObject.transform.parent.GetChild(1).childCount > i - 5){
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().sprite = carGot.gameObject.transform.parent.GetChild(1).GetChild(i - 5).gameObject.GetComponent<CarMovement>().image.sprite;
-                            Color imageColor = childTransform.GetChild(0).gameObject.GetComponent<Image>().color;
+                        if(carGot.gameObject.transform.parent.GetChild(1).GetChild(i-5).childCount > 0){
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().sprite = carGot.gameObject.transform.parent.GetChild(1).GetChild(i-5).GetChild(0).gameObject.GetComponent<CarMovement>().image.sprite;
+                            Color imageColor = GarageChild.GetChild(0).gameObject.GetComponent<Image>().color;
                             imageColor.a = 1f;
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
                         }
                         else{
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().sprite = null;
-                            Color imageColor = childTransform.GetChild(0).gameObject.GetComponent<Image>().color;
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().sprite = null;
+                            Color imageColor = GarageChild.GetChild(0).gameObject.GetComponent<Image>().color;
                             imageColor.a = 0f;
-                            childTransform.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
+                            GarageChild.GetChild(0).gameObject.GetComponent<Image>().color = imageColor;
                         }
                     }
-
                 } 
     }
 

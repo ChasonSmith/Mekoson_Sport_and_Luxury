@@ -17,6 +17,7 @@ public class Spawner : MonoBehaviour
     public GameObject newParentObject1;
     public GameObject newParentObject2;
     public Track1 track1;
+    int foundParent;
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,6 +25,7 @@ public class Spawner : MonoBehaviour
     }
     void Start()
     {
+        foundParent = 0;
         carIsSpawned = 0;
         timeToSpawn = timeToSpawnCounter;
     }
@@ -53,11 +55,21 @@ public class Spawner : MonoBehaviour
         }
         if(carIsSpawned == 1){
             if(spawnedCar.GetComponent<ChallengeCar>().carIsChallenged == 1){
-                if(newParentObject1.transform.childCount <= 5){
-                    spawnedCar.transform.SetParent(newParentObject1.transform);
+                for (int i = 0; i < newParentObject1.transform.childCount; i++){
+                    if(newParentObject1.transform.GetChild(i).childCount == 0){
+                        spawnedCar.transform.SetParent(newParentObject1.transform.GetChild(i));
+                        foundParent = 1;
+                        break;
+                    }
                 }
-                else{
-                    spawnedCar.transform.SetParent(newParentObject2.transform);
+                if(foundParent == 0){
+                    for (int i = 0; i < newParentObject2.transform.childCount; i++){
+                    if(newParentObject2.transform.GetChild(i).childCount == 0){
+                        spawnedCar.transform.SetParent(newParentObject2.transform.GetChild(i));
+                        //foundParent = 1;
+                        break;
+                    }
+                }
                 }
                 spawnedCar.SetActive(false);
                 timeToSpawnCounter = timeToSpawn;
