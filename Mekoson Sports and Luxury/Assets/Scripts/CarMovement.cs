@@ -216,7 +216,7 @@ public class CarMovement : MonoBehaviour
             Vector3 newRotation = cameraTransform.eulerAngles;
             newRotation.x = originalXRotation;
             newRotation.z = originalZRotation;
-            //cameraTransform.eulerAngles = newRotation;
+            cameraTransform.eulerAngles = newRotation;
         }
         if (Input.GetKey("right")){
             //rb.velocity = new Vector3(5,0,rb.velocity.z);
@@ -230,7 +230,7 @@ public class CarMovement : MonoBehaviour
             Vector3 newRotation = cameraTransform.eulerAngles;
             newRotation.x = originalXRotation;
             newRotation.z = originalZRotation;
-            //cameraTransform.eulerAngles = newRotation;
+            cameraTransform.eulerAngles = newRotation;
         }
 
 
@@ -373,7 +373,7 @@ public class CarMovement : MonoBehaviour
             // Get the material of the ground
             Material material = renderer.material;
             //Debug.Log(material.name);
-            if(material.name == "asphalt (Instance)"){
+            if(material.name == "asphalt (Instance)" || material.name == "Road2 (Instance)"){
                 onAsphalt = 1;
             }
             else if(material.name == "grass (Instance)"){
