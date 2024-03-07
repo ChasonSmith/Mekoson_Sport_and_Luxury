@@ -20,6 +20,7 @@ public class playerMove : MonoBehaviour
     public int KeyLock;
     public int byGarage;
     public GameObject GarageInterface;
+    public GameObject[] inventory;
     void Start()
     {
         KeyLock = 0;
