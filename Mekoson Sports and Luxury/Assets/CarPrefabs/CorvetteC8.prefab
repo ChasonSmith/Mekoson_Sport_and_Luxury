@@ -42,8 +42,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0.165, z: 0}
   m_Radius: 0.37
   m_SuspensionSpring:
-    spring: 0
-    damper: 0
+    spring: 8000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1836,7 +1836,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!65 &5106190895665281618
 BoxCollider:
@@ -1907,8 +1907,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0.165, z: 0}
   m_Radius: 0.37
   m_SuspensionSpring:
-    spring: 0
-    damper: 0
+    spring: 8000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -2136,8 +2136,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0.165, z: 0}
   m_Radius: 0.37
   m_SuspensionSpring:
-    spring: 0
-    damper: 0
+    spring: 8000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -2549,8 +2549,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0.165, z: 0}
   m_Radius: 0.37
   m_SuspensionSpring:
-    spring: 0
-    damper: 0
+    spring: 8000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
