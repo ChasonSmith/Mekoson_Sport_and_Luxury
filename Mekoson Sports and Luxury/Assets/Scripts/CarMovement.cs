@@ -112,7 +112,7 @@ public class CarMovement : MonoBehaviour
     void Update()
     {
 
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        //transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
         GetInputs();
         AnimateWheels();
         //WheelEffects();
@@ -233,9 +233,9 @@ public class CarMovement : MonoBehaviour
             cameraTransform.eulerAngles = newRotation;
         }
 
-
-
-
+        // if (Input.GetKey(KeyCode.R)){
+        //     transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        // }
         // Vector3 parentPosition = transform.position;
         // carTransform.position = new Vector3(parentPosition.x, parentPosition.y, parentPosition.z + 10);
 
