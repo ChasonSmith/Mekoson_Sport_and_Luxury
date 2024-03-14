@@ -16,6 +16,8 @@ TagManager:
   - PlaceHolder
   - Rcok
   - Rock
+  - Wood
+  - Water
   layers:
   - Default
   - TransparentFX
