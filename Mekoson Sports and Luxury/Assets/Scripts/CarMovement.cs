@@ -43,6 +43,9 @@ public class CarMovement : MonoBehaviour
     public float asphaltMult;
     public float mudMult;
     public float desertMult;
+    public float waterMult;
+    public float stoneMult;
+    public float woodMult;
     public Vector3 _centerOfMass;
 
     public List<Wheel> wheels;
@@ -82,6 +85,9 @@ public class CarMovement : MonoBehaviour
     public int onGrass;
     public int onMud;
     public int onDesert;
+    public int onStone;
+    public int onWater;
+    public int onWood;
     public float currMult;
     public Image image;
     // Start is called before the first frame update
@@ -298,8 +304,17 @@ public class CarMovement : MonoBehaviour
         if(onAsphalt == 1){
             currMult = asphaltMult;
         }
+        else if(onWood == 1){
+            currMult = snowMult;
+        }
+        else if(onStone == 1){
+            currMult = snowMult;
+        }
         else if(onMud == 1){
             currMult = mudMult;
+        }
+        else if(onWater == 1){
+            currMult = snowMult;
         }
         else if(onGrass == 1){
             currMult = grassMult;
@@ -357,6 +372,18 @@ public class CarMovement : MonoBehaviour
         {
             onMud = 0;
         }
+        if (other.CompareTag("Rock")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onStone = 0;
+        }
+        if (other.CompareTag("Water")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onWater = 0;
+        }
+        if (other.CompareTag("Wood")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onWood = 0;
+        }
         if (other.CompareTag("Garage")) // Example: Checking if the triggering object has the "Player" tag
         {
             CarParent.gameObject.GetComponent<PlayerSummon>().garageText.SetActive(false);
@@ -382,11 +409,20 @@ public class CarMovement : MonoBehaviour
             else if(material.name == "desert (Instance)"){
                 onDesert = 1;
             }
-            else if(material.name == "snow (Instance)"){
+            else if(material.name == "snow (Instance)" || material.name == "Snow2 (Instance)"){
                 onSnow = 1;
             }
-            else if(material.name == "mud (Instance)"){
+            else if(material.name == "mud (Instance)" || material.name == "mud1 (Instance)"){
                 onMud = 1;
+            }
+            else if(material.name == "Water0 (Instance)" || material.name == "Water1 (Instance)" || material.name == "Water2 (Instance)"){
+                onWater = 1;
+            }
+            else if(material.name == "Wood (Instance)" || material.name == "Wood2 (Instance)" || material.name == "Wood3 (Instance)"){
+                onWood = 1;
+            }
+            else if(material.name == "Stone (Instance)" || material.name == "Rock2 (Instance)" || material.name == "Rock3 (Instance)" || material.name == "Rock4 (Instance)" || material.name == "Rock5 (Instance)" || material.name == "Rock6 (Instance)" || material.name == "Rock7 (Instance)"){
+                onStone = 1;
             }
         }
     }

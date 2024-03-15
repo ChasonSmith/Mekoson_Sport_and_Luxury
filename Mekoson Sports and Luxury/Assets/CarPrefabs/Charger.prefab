@@ -209,6 +209,9 @@ MonoBehaviour:
   asphaltMult: 2
   mudMult: 0.2
   desertMult: 0.5
+  waterMult: 1
+  stoneMult: 1
+  woodMult: 1
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 7772336081901928207}
@@ -246,6 +249,9 @@ MonoBehaviour:
   onGrass: 0
   onMud: 0
   onDesert: 0
+  onStone: 0
+  onWater: 0
+  onWood: 0
   currMult: 0
   image: {fileID: 4504641493290795120}
 --- !u!114 &106400582069789828
