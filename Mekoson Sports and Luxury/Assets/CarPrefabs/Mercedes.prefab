@@ -499,6 +499,9 @@ MonoBehaviour:
   asphaltMult: 1
   mudMult: 1
   desertMult: 1
+  waterMult: 1
+  stoneMult: 1
+  woodMult: 1
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 2937581589562909784}
@@ -536,6 +539,9 @@ MonoBehaviour:
   onGrass: 0
   onMud: 0
   onDesert: 0
+  onStone: 0
+  onWater: 0
+  onWood: 0
   currMult: 0
   image: {fileID: 3978220489263921805}
 --- !u!114 &4099849035856712039
@@ -3001,7 +3007,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
