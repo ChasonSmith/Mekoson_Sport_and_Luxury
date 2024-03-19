@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 6605811554143428564}
   - component: {fileID: 6494317999112650551}
   - component: {fileID: 2563973977813838378}
+  - component: {fileID: 5343521565815239876}
   m_Layer: 0
   m_Name: Mercedes
   m_TagString: Driveable
@@ -603,6 +604,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2204285, y: 0.89983034, z: 4.096926}
   m_Center: {x: -0.047684193, y: 0.7280755, z: 0.037256002}
+--- !u!114 &5343521565815239876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946394563404842073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c06e436b1729f84ea5ea0bf80812444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010893003105331401
 GameObject:
   m_ObjectHideFlags: 0

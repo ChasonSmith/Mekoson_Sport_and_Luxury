@@ -1717,6 +1717,7 @@ GameObject:
   - component: {fileID: 5403178660583516310}
   - component: {fileID: 5106190895665281618}
   - component: {fileID: 6228884273503152229}
+  - component: {fileID: 1818702098437485780}
   m_Layer: 0
   m_Name: CorvetteC8
   m_TagString: Driveable
@@ -1871,6 +1872,18 @@ CapsuleCollider:
   m_Height: 7.939104
   m_Direction: 2
   m_Center: {x: -0.008282185, y: 0.16675997, z: -0.045479774}
+--- !u!114 &1818702098437485780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156349252897493603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c06e436b1729f84ea5ea0bf80812444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5165342299545992810
 GameObject:
   m_ObjectHideFlags: 0
