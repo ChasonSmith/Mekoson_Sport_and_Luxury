@@ -490,7 +490,7 @@ MonoBehaviour:
   maxAcceleration: 0
   turnSensitivity: 0
   brakeAcceleration: 300
-  defaultSpeed: 50
+  defaultSpeed: 100
   defaultRotate: 1
   maxSteerAngle: 30
   cameraSpeed: 45
