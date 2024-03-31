@@ -266,8 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea13fc064270a640b8fb1de1ca121bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToBeat: 0
-  TrackLocation: {x: 0, y: 0, z: 0}
+  timeToBeat: 140
+  TrackLocation: {x: 10000, y: 0.5, z: -15}
   carIsChallenged: 0
   track1: {fileID: 0}
 --- !u!54 &6828537684798792559
