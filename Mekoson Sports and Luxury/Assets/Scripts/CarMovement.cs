@@ -274,6 +274,7 @@ public class CarMovement : MonoBehaviour
                 inRace = 0;
                 lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.lapsDone = 0;
+                CarBeingChallenged.GetComponent<ChallengeCar>().track1.checkVal = 0;
                 transform.position = positionWhereChallenge;
                 Destroy(CarBeingChallenged);
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeTimer();
@@ -285,6 +286,7 @@ public class CarMovement : MonoBehaviour
                 inRace = 0;
                 lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.lapsDone = 0;
+                CarBeingChallenged.GetComponent<ChallengeCar>().track1.checkVal = 0;
                 transform.position = positionWhereChallenge;
                 CarBeingChallenged.GetComponent<ChallengeCar>().enabled = false;
                 CarBeingChallenged.tag = "Driveable";
