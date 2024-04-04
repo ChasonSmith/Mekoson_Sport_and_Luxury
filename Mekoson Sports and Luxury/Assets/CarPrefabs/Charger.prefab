@@ -212,6 +212,7 @@ MonoBehaviour:
   waterMult: 1
   stoneMult: 1
   woodMult: 1
+  boostMult: 0
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 7772336081901928207}
@@ -252,8 +253,12 @@ MonoBehaviour:
   onStone: 0
   onWater: 0
   onWood: 0
+  onBoost: 0
   currMult: 0
   image: {fileID: 4504641493290795120}
+  inTime: 0
+  timeLocation: {fileID: 0}
+  timeTrack: {fileID: 0}
 --- !u!114 &106400582069789828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToBeat: 140
-  TrackLocation: {x: 10000, y: 0.5, z: -15}
+  TrackLocation: {x: 22585, y: 0.05, z: -6530}
   carIsChallenged: 0
   track1: {fileID: 0}
 --- !u!54 &6828537684798792559

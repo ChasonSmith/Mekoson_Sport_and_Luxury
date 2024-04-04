@@ -2527,6 +2527,7 @@ MonoBehaviour:
   waterMult: 1
   stoneMult: 1
   woodMult: 1
+  boostMult: 2.5
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 1968569589409374309}
@@ -2567,8 +2568,12 @@ MonoBehaviour:
   onStone: 0
   onWater: 0
   onWood: 0
+  onBoost: 0
   currMult: 0
   image: {fileID: 1329311819462335093}
+  inTime: 0
+  timeLocation: {fileID: 0}
+  timeTrack: {fileID: 0}
 --- !u!114 &3277980912449288353
 MonoBehaviour:
   m_ObjectHideFlags: 0

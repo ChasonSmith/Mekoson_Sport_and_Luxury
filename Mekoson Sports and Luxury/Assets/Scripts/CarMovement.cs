@@ -46,6 +46,7 @@ public class CarMovement : MonoBehaviour
     public float waterMult;
     public float stoneMult;
     public float woodMult;
+    public float boostMult;
     public Vector3 _centerOfMass;
 
     public List<Wheel> wheels;
@@ -88,8 +89,12 @@ public class CarMovement : MonoBehaviour
     public int onStone;
     public int onWater;
     public int onWood;
+    public int onBoost;
     public float currMult;
     public Image image;
+    public int inTime;
+    public Transform timeLocation;
+    public Track1 timeTrack;
     // Start is called before the first frame update
     void Start()
     {
@@ -303,7 +308,10 @@ public class CarMovement : MonoBehaviour
             CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
         }
 
-        if(onAsphalt == 1){
+        if(onBoost == 1){
+            currMult = boostMult;
+        }
+        else if(onAsphalt == 1){
             currMult = asphaltMult;
         }
         else if(onWood == 1){
@@ -341,6 +349,10 @@ public class CarMovement : MonoBehaviour
             canChallenge = 1;
             CarBeingChallenged = other.gameObject;
             // Add your code here to handle the trigger entering event
+        }
+        if (other.CompareTag("D3TP")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            transform.position = new Vector3(22395f, 385f, -6120f);
         }
     }
 
@@ -386,6 +398,10 @@ public class CarMovement : MonoBehaviour
         {
             onWood = 0;
         }
+        if (other.CompareTag("Boost")) // Example: Checking if the triggering object has the "Player" tag
+        {
+            onBoost = 0;
+        }
         if (other.CompareTag("Garage")) // Example: Checking if the triggering object has the "Player" tag
         {
             CarParent.gameObject.GetComponent<PlayerSummon>().garageText.SetActive(false);
@@ -402,13 +418,16 @@ public class CarMovement : MonoBehaviour
             // Get the material of the ground
             Material material = renderer.material;
             //Debug.Log(material.name);
-            if(material.name == "asphalt (Instance)" || material.name == "Road2 (Instance)"){
+            if(material.name == "Boost (Instance)"){
+                onBoost = 1;
+            }
+            else if(material.name == "asphalt (Instance)" || material.name == "Road2 (Instance)"){
                 onAsphalt = 1;
             }
             else if(material.name == "grass (Instance)"){
                 onGrass = 1;
             }
-            else if(material.name == "desert (Instance)"){
+            else if(material.name == "desert (Instance)" || material.name == "desert1 (Instance)"){
                 onDesert = 1;
             }
             else if(material.name == "snow (Instance)" || material.name == "Snow2 (Instance)"){
