@@ -424,7 +424,7 @@ public class CarMovement : MonoBehaviour
             else if(material.name == "asphalt (Instance)" || material.name == "Road2 (Instance)"){
                 onAsphalt = 1;
             }
-            else if(material.name == "grass (Instance)"){
+            else if(material.name == "grass (Instance)" || material.name == "grass1 (Instance)"){
                 onGrass = 1;
             }
             else if(material.name == "desert (Instance)" || material.name == "desert1 (Instance)"){
