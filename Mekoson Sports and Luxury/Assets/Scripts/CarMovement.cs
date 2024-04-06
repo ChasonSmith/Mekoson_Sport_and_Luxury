@@ -433,7 +433,7 @@ public class CarMovement : MonoBehaviour
             else if(material.name == "snow (Instance)" || material.name == "Snow2 (Instance)"){
                 onSnow = 1;
             }
-            else if(material.name == "mud (Instance)" || material.name == "mud1 (Instance)"){
+            else if(material.name == "mud (Instance)" || material.name == "mud1 (Instance)" || material.name == "mud2 (Instance)"){
                 onMud = 1;
             }
             else if(material.name == "Water0 (Instance)" || material.name == "Water1 (Instance)" || material.name == "Water2 (Instance)"){
