@@ -7,7 +7,7 @@ public class Track1 : MonoBehaviour
     public int lapsNeeded;
     public int lapsDone;
     public int checkVal;
-
+    public int checkNeed;
     // Start is called before the first frame update
     void Start()
     {

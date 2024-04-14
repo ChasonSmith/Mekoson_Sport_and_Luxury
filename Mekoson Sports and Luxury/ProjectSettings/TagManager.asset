@@ -18,6 +18,8 @@ TagManager:
   - Rock
   - Wood
   - Water
+  - Boost
+  - D3TP
   layers:
   - Default
   - TransparentFX
