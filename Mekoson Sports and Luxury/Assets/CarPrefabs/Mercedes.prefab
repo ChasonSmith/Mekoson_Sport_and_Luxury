@@ -503,6 +503,7 @@ MonoBehaviour:
   waterMult: 1
   stoneMult: 1
   woodMult: 1
+  boostMult: 0
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 2937581589562909784}
@@ -543,8 +544,12 @@ MonoBehaviour:
   onStone: 0
   onWater: 0
   onWood: 0
+  onBoost: 0
   currMult: 0
   image: {fileID: 3978220489263921805}
+  inTime: 0
+  timeLocation: {fileID: 0}
+  timeTrack: {fileID: 0}
 --- !u!114 &4099849035856712039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946394563404842073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c06e436b1729f84ea5ea0bf80812444, type: 3}
   m_Name: 

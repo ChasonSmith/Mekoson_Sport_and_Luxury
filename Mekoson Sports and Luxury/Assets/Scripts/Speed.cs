@@ -9,6 +9,7 @@ public class Speed : MonoBehaviour
     void Start() {
         arrow = GameObject.Find("Speedometer");
         rigidbody = GetComponent<Rigidbody>();
+        Debug.Log(transform.gameObject.name);
     }
 
     void Update() {

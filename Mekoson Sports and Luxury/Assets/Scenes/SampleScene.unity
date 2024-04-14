@@ -21042,6 +21042,58 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25, y: 5.25, z: 5}
   m_Center: {x: -12.5, y: -2.375, z: -2.5000002}
+--- !u!1 &1298729861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298729863}
+  - component: {fileID: 1298729862}
+  m_Layer: 0
+  m_Name: SaveData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1298729862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298729861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cf022e196064841a497b1a360e9c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7607324992295000997}
+  ownedCars: {fileID: 716540777}
+  restOfCars: {fileID: 1425260999}
+  cars:
+  - {fileID: 1959870272607393917, guid: f753b95448699c94d9558ffc4611898f, type: 3}
+  - {fileID: 5156349252897493603, guid: 6298584f44da193438550779c489ce5a, type: 3}
+  - {fileID: 946394563404842073, guid: d726d1f96a292a840aa51fe7b148c375, type: 3}
+  - {fileID: 7064238220505027986, guid: 5f99fa30332943e4d9cb758c45fbce1a, type: 3}
+--- !u!4 &1298729863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298729861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80212.46, y: 135.59198, z: -237.74579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1300291745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3790479642556692487, guid: 273409cee5a83d746873ba6fc4d7b634, type: 3}
