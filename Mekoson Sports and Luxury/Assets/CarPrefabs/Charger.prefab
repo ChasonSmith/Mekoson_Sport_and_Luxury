@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToBeat: 180
-  TrackLocation: {x: 15235, y: 0.05, z: 5975}
+  TrackLocation: {x: 70000, y: 0.05, z: 0}
   carIsChallenged: 0
   track1: {fileID: 0}
 --- !u!54 &6828537684798792559
