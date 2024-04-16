@@ -21,6 +21,8 @@ public class SaveController : MonoBehaviour
             DropdownValueChanged(dropdown);
         });
         updateDropdown();
+        string password = GlobalVariables.Get<string>("level");
+        Debug.Log(password);
     }
     void DropdownValueChanged(TMP_Dropdown change) {
         inputField.text = change.options[change.value].text;
