@@ -255,6 +255,7 @@ public class CarMovement : MonoBehaviour
                 canChallenge = 0;
                 CarParent.gameObject.GetComponent<PlayerSummon>().challengeText.SetActive(false);
                 positionWhereChallenge = transform.position;
+                CarBeingChallenged.transform.parent.parent.gameObject.GetComponent<despawn>().leaveToRace = 2;
                 transform.rotation = Quaternion.Euler(Vector3.zero);
                 transform.position = CarBeingChallenged.GetComponent<ChallengeCar>().TrackLocation;
                 inRace = 1;
@@ -280,8 +281,9 @@ public class CarMovement : MonoBehaviour
                 lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.checkVal = 0;
+                CarBeingChallenged.transform.parent.gameObject.GetComponent<Spawner>().challengeReturn = 2;
                 transform.position = positionWhereChallenge;
-                Destroy(CarBeingChallenged);
+                //Destroy(CarBeingChallenged);
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeTimer();
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeLapCount();
             }
@@ -292,12 +294,14 @@ public class CarMovement : MonoBehaviour
                 lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.lapsDone = 0;
                 CarBeingChallenged.GetComponent<ChallengeCar>().track1.checkVal = 0;
-                transform.position = positionWhereChallenge;
                 CarBeingChallenged.GetComponent<ChallengeCar>().enabled = false;
                 CarBeingChallenged.tag = "Driveable";
                 CarBeingChallenged.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 CarBeingChallenged.GetComponent<Rigidbody>().constraints |= RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+                CarBeingChallenged.transform.parent.gameObject.GetComponent<Spawner>().challengeReturn = 2;
+                CarBeingChallenged.transform.parent.gameObject.GetComponent<Spawner>().carWasWon = 1;
                 CarBeingChallenged = null;
+                transform.position = positionWhereChallenge;
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeTimer();
                 CarParent.gameObject.GetComponent<PlayerSummon>().closeLapCount();
             }
