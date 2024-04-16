@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using TMPro;
 
 public class SaveController : MonoBehaviour
 {
@@ -10,23 +11,42 @@ public class SaveController : MonoBehaviour
     public GameObject ownedCars;
     public GameObject restOfCars;
     public List<GameObject> cars;
+    public TMP_InputField inputField;
+    public TMP_Dropdown dropdown;
+    public GameObject saveMenu;
+
 
     void Start() {
-        
+        dropdown.onValueChanged.AddListener(delegate {
+            DropdownValueChanged(dropdown);
+        });
+        updateDropdown();
+    }
+    void DropdownValueChanged(TMP_Dropdown change) {
+        inputField.text = change.options[change.value].text;
+    }
+    void updateDropdown() {
+        dropdown.ClearOptions();
+        IEnumerable<string> myFiles = Directory.EnumerateFiles(Application.persistentDataPath, "*.msf", SearchOption.AllDirectories);
+        List<string> pathList = new List<string>(myFiles);
+        List<string> nameList = new List<string>(); 
+        foreach (string path in pathList) {
+            nameList.Add(Path.GetFileNameWithoutExtension(path));
+        }
+        dropdown.AddOptions(nameList);
+        DropdownValueChanged(dropdown);
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.M)) {
-            Save();
-        }
-
-        if (Input.GetKeyDown(KeyCode.N)) {
-            Load();
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            saveMenu.SetActive(!saveMenu.activeSelf);
         }
     }
 
-    void Save() {
-        string path = Application.persistentDataPath + "/test.txt";
+    public void Save() {
+
+        string path = Application.persistentDataPath + "/" + inputField.text + ".msf";
+        Debug.Log(path);
 
         PlayerData playerData = new PlayerData(player);
         InventoryData hotBarData = InventoryData.InventoryDataFactory(ownedCars);
@@ -35,10 +55,11 @@ public class SaveController : MonoBehaviour
         string saveDataJson = JsonUtility.ToJson(new SaveData(playerData, hotBarData, inventoryData));
 
         File.WriteAllText(path, saveDataJson);
+        updateDropdown();
     }
 
-    void Load() {
-        string path = Application.persistentDataPath + "/test.txt";
+    public void Load() {
+        string path = Application.persistentDataPath + "/" + inputField.text + ".msf";
         StreamReader reader = new StreamReader(path);
         string saveDataJson = reader.ReadToEnd();
         SaveData saveData = JsonUtility.FromJson<SaveData>(saveDataJson);
