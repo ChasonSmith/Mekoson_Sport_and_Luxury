@@ -11506,7 +11506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Charger: {fileID: 7064238220505027986, guid: 5f99fa30332943e4d9cb758c45fbce1a, type: 3}
-  CorvetteC8: {fileID: 7133160501016135077, guid: 5963c0edae3f5c24ca5646c61456a13a, type: 3}
+  CorvetteC8: {fileID: 1410173180193087533, guid: 209e57b5fa276f149b7de7c5e9cd637d, type: 3}
   parent: {fileID: 1403279144}
 --- !u!114 &716540780
 MonoBehaviour:
