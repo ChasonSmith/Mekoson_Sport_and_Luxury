@@ -21,8 +21,6 @@ public class SaveController : MonoBehaviour
             DropdownValueChanged(dropdown);
         });
         updateDropdown();
-        string password = GlobalVariables.Get<string>("level");
-        Debug.Log(password);
     }
     void DropdownValueChanged(TMP_Dropdown change) {
         inputField.text = change.options[change.value].text;
@@ -60,8 +58,8 @@ public class SaveController : MonoBehaviour
         updateDropdown();
     }
 
-    public void Load() {
-        string path = Application.persistentDataPath + "/" + inputField.text + ".msf";
+    public void Load(string fileName) {
+        string path = Application.persistentDataPath + "/" + fileName + ".msf";
         StreamReader reader = new StreamReader(path);
         string saveDataJson = reader.ReadToEnd();
         SaveData saveData = JsonUtility.FromJson<SaveData>(saveDataJson);
