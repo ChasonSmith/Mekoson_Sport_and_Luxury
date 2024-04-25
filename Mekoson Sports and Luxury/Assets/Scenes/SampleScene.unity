@@ -16394,7 +16394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6576c68dacb36ff429ca5c657328b4c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instCar: {fileID: 0}
+  instCar: {fileID: 716540779}
   ChoicePanel: {fileID: 1292908226}
 --- !u!1 &1075234154
 GameObject:
