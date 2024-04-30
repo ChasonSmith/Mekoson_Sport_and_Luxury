@@ -95,6 +95,7 @@ public class CarMovement : MonoBehaviour
     public int inTime;
     public Transform timeLocation;
     public Track1 timeTrack;
+    private float maxVelocity = 75;
     // Start is called before the first frame update
     void Start()
     {
@@ -342,6 +343,16 @@ public class CarMovement : MonoBehaviour
         else{
             currMult = 1;
         }
+    }
+
+    void FixedUpdate() {
+        Debug.Log("Fixed update");
+        Debug.Log(rb.velocity.magnitude);
+        if (rb.velocity.magnitude > maxVelocity) {
+            Vector3 direction = Vector3.Normalize(rb.velocity);
+            rb.velocity = maxVelocity * direction;
+        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
