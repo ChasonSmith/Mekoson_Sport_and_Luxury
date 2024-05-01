@@ -250,6 +250,24 @@ public class CarMovement : MonoBehaviour
         // Vector3 parentPosition = transform.position;
         // carTransform.position = new Vector3(parentPosition.x, parentPosition.y, parentPosition.z + 10);
 
+        if (Input.GetKey(KeyCode.R)){
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            // Set X and Z rotation values to 0
+            currentRotation.x = 0f;
+            currentRotation.z = 0f;
+            // Apply the new rotation
+            transform.rotation = Quaternion.Euler(currentRotation); 
+        }
+
+        if (Input.GetKey(KeyCode.Z)){
+            Vector3 currentCamRotation = cameraTransform.rotation.eulerAngles;
+            // Set X and Z rotation values to 0
+            currentCamRotation.y = 0f;
+            currentCamRotation.z = 0f;
+            // Apply the new rotation
+            cameraTransform.rotation = Quaternion.Euler(currentCamRotation); 
+        }
+
         if (Input.GetKey(KeyCode.C)){
             if(canChallenge == 1){
                 canChallenge = 0;
@@ -356,7 +374,7 @@ public class CarMovement : MonoBehaviour
         }
         if (other.CompareTag("D3TP")) // Example: Checking if the triggering object has the "Player" tag
         {
-            transform.position = new Vector3(22395f, 385f, -6120f);
+            transform.position = new Vector3(34810f, 385f, 400f);
         }
     }
 

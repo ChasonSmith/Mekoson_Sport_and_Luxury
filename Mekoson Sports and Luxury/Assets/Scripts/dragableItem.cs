@@ -16,6 +16,7 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     //public Transform imageParents;
     public int overObject;
     public playerMove player;
+    // private RectTransform rectTransform;
     public void OnBeginDrag(PointerEventData eventData){
         if(image.sprite != null){
             parentAfterDrag = transform.parent;
@@ -25,12 +26,18 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
             transform.SetAsLastSibling();
             //Debug.Log("Begin drag");
             image.raycastTarget = false;
+            // Vector3 newPosition = transform.position;
+            // newPosition.z = 0;
+            // transform.position = newPosition;
         }
     }
 
     public void OnDrag(PointerEventData eventData){
         if(image.sprite != null){
             transform.position = Input.mousePosition;
+            // Vector3 newPosition = transform.position;
+            // newPosition.z = 0;
+            // transform.position = newPosition;
         }
     }
 
@@ -40,6 +47,7 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
             transform.SetParent(parentAfterDrag);
             image.raycastTarget = true;
         }
+        
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -51,9 +59,14 @@ public class dragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     {
         overObject = 0;
     }
+    void Start(){
+        // rectTransform = GetComponent<RectTransform>();
+    }
 
     void Update()
     {
+        // Vector3 zeroPosition = new Vector3(rectTransform.position.x, rectTransform.position.y, 0);
+        // rectTransform.position = zeroPosition;
         // Check if the right mouse button is clicked
         if (Input.GetMouseButtonDown(1) && overObject == 1)
         {

@@ -61,6 +61,7 @@ public class PlayerSummon : MonoBehaviour
                     transform.position = refPosition;
                     Vector3 newPosition = carToDrive.localPosition;
                     newPosition.x = 0f;
+                    newPosition.y = 0f;
                     newPosition.z = 0f;
                     carToDrive.localPosition = newPosition;
                     carToDrive.rotation = Quaternion.identity;

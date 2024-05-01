@@ -10,6 +10,7 @@ public class LoadController : MonoBehaviour {
     public GameObject starter;
     public List<GameObject> world;
     public SaveController saveController;
+    public GameObject startCam;
 
     void Start() {
         updateDropdown();
@@ -28,6 +29,7 @@ public class LoadController : MonoBehaviour {
 
     public void NewWorld() {
         this.gameObject.SetActive(false);
+        startCam.SetActive(false);
         starter.SetActive(true);
         TurnWorldOn();
     }
